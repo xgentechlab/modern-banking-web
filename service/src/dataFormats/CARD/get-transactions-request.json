@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Start date for transaction period"
+        },
+        "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "End date for transaction period"
+        },
+        "page": {
+            "type": "number",
+            "minimum": 1,
+            "description": "Page number for pagination"
+        },
+        "limit": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 100,
+            "description": "Number of records per page"
+        }
+    }
+} 

@@ -1,0 +1,25 @@
+{
+    "moduleCode": "ANALYTICS",
+    "moduleName": "Analytics",
+    "submodules": [
+        {
+            "submoduleCode": "ANALYTICS_TRANSACTIONS",
+            "submoduleName": "Transactions analytics",
+            "requestFile": "transaction-analytics-request.json",
+            "endpoint": "/analytics/transactions"
+        },
+        {
+            "submoduleCode": "ANALYTICS_PREDICTIONS",
+            "submoduleName": "Predictions analytics",
+            "requestFile": null,
+            "endpoint": "/analytics/predictions"
+        },
+        {
+            "submoduleCode": "ANALYTICS_SUMMARY",
+            "submoduleName": "Summary analytics",
+            "requestFile": null,
+            "endpoint": "/analytics/summary"
+        }
+        
+    ]
+}

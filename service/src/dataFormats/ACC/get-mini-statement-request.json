@@ -1,0 +1,24 @@
+{
+    "type": "object",
+    
+    "properties": {
+        "accountNumber": {
+            "type": "string",
+            "description": "Account number"
+        },
+        "numberOfTransactions": {
+            "type": "integer",
+            "minimum": 5,
+            "maximum": 20,
+            "default": 10,
+            "description": "Number of recent transactions to include"
+        },
+        "accountType": {
+            "type": "string",
+            "enum": ["SAV", "CUR", "FD"],
+            "description": "Account type savings, current, fixed deposit"
+        }
+
+        
+    }
+} 

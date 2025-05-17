@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "required": ["productId", "amount", "tenure", "disbursementAccount"],
+    "properties": {
+        "productId": {
+            "type": "string",
+            "description": "ID of the loan product"
+        },
+        "amount": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Loan amount requested"
+        },
+        "tenure": {
+            "type": "number",
+            "minimum": 1,
+            "description": "Loan tenure in months"
+        },
+        "purpose": {
+            "type": "string",
+            "description": "Purpose of the loan"
+        },
+        "disbursementAccount": {
+            "type": "string",
+            "description": "Account ID for loan disbursement"
+        }
+    }
+} 

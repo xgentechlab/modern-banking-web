@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "required": ["accountNumber", "ifscCode"],
+    "properties": {
+        "accountNumber": {
+            "type": "string",
+            "description": "Account number to validate"
+        },
+        "ifscCode": {
+            "type": "string",
+            "pattern": "^[A-Z]{4}0[A-Z0-9]{6}$",
+            "description": "IFSC code of the bank"
+        }
+    }
+} 

@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "required": ["oldPin", "newPin"],
+    "properties": {
+        "oldPin": {
+            "type": "string",
+            "pattern": "^[0-9]{4}$",
+            "description": "Current 4-digit PIN"
+        },
+        "newPin": {
+            "type": "string",
+            "pattern": "^[0-9]{4}$",
+            "description": "New 4-digit PIN"
+        }
+    }
+} 

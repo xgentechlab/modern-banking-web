@@ -1,0 +1,51 @@
+{
+  "user_id": "14785236987459",
+  "session_id": "d2c17b5e-ba1d-481a-8a9e-9ab13998cef5",
+  "created_at": "2025-05-15T12:55:51.307231",
+  "last_updated": "2025-05-15T12:55:53.259950",
+  "history": [
+    {
+      "timestamp": "2025-05-15T12:55:51.307231",
+      "text": "delete this account",
+      "is_user": true,
+      "response_data": null
+    },
+    {
+      "timestamp": "2025-05-15T12:55:53.259950",
+      "text": "",
+      "is_user": false,
+      "response_data": {
+        "module": {
+          "moduleCode": "ACC",
+          "moduleName": "Accounts"
+        },
+        "sub_module": {
+          "submoduleCode": "ACC_DELETE",
+          "submoduleName": "Delete Account",
+          "endpoint": null,
+          "requestFile": null
+        },
+        "flow": "TRANSFER",
+        "entities": {},
+        "validation": {
+          "is_complete": true,
+          "missing_parameters": [],
+          "questions": null
+        },
+        "resolution": {
+          "is_resolved": true,
+          "resolution_parameters": [],
+          "questions": null,
+          "data": null
+        },
+        "raw_text": "delete this account",
+        "error": null,
+        "session_id": "d2c17b5e-ba1d-481a-8a9e-9ab13998cef5"
+      }
+    }
+  ],
+  "entities": {},
+  "current_module": "ACC",
+  "current_submodule": "ACC_DELETE",
+  "current_flow": "TRANSFER"
+}

@@ -1,0 +1,97 @@
+{
+    "moduleCode": "TRF",
+    "moduleName": "Transfers",
+    "submodules": [
+        {
+            "submoduleCode": "TRF_IMMEDIATE",
+            "submoduleName": "Immediate Transfer",
+            "requestFile": "src/dataFormats/transfer/immediate-transfer-request.json",
+            "endpoint": "/api/transfers/immediate"
+        },
+        {
+            "submoduleCode": "TRF_SCHEDULE",
+            "submoduleName": "Schedule Transfer",
+            "requestFile": "src/dataFormats/transfer/schedule-transfer-request.json",
+            "endpoint": "/api/transfers/schedule"
+        },
+        {
+            "submoduleCode": "TRF_STATUS",
+            "submoduleName": "Transfer Status",
+            "requestFile": null,
+            "endpoint": "/api/transfers/:transferId/status"
+        },
+        {
+            "submoduleCode": "TRF_CANCEL",
+            "submoduleName": "Cancel Scheduled Transfer",
+            "requestFile": null,
+            "endpoint": "/api/transfers/scheduled/:transferId"
+        },
+        {
+            "submoduleCode": "TRF_DOMESTIC",
+            "submoduleName": "Domestic Transfer",
+            "requestFile": "src/dataFormats/transfer/immediate-transfer-request.json",
+            "endpoint": "/api/transfers/domestic"
+        },
+        {
+            "submoduleCode": "TRF_INTL",
+            "submoduleName": "International Transfer",
+            "requestFile": "src/dataFormats/transfer/international-transfer-request.json",
+            "endpoint": "/api/transfers/international"
+        },
+        {
+            "submoduleCode": "TRF_HISTORY",
+            "submoduleName": "Transfer History",
+            "requestFile": null,
+            "endpoint": "/api/transfers"
+        }
+    ],
+    "properties": {
+        "transferId": {
+            "type": "string",
+            "description": "Unique identifier for the transfer"
+        },
+        "amount": {
+            "type": "number",
+            "description": "Amount to transfer"
+        },
+        "currency": {
+            "type": "string",
+            "description": "Currency code"
+        },
+        "sourceAccountNumber": {
+            "type": "string",
+            "description": "Source account number or"
+        },
+        "destinationAccountNumber": {
+            "type": "string",
+            "description": "Destination account number"
+        },
+        "sourceAccountType": {
+            "type": "string",
+            "description": "Source account type",
+            "enum": ["SAV", "CUR"]
+        },
+        "destinationAccountType": {
+            "type": "string",
+            "description": "Destination account type",
+            "enum": ["SAV", "CUR"]
+        },
+        "beneficiaryName": {
+            "type": "string",
+            "description": "Beneficiary name"
+        },
+        "beneficiaryAccountNumber": {
+            "type": "string",
+            "description": "Beneficiary account number"
+        },
+        "beneficiaryMobileNumber": {
+            "type": "string",
+            "description": "Beneficiary mobile number"
+        },
+        "beneficiaryEmail": {
+            "type": "string",
+            "description": "Beneficiary email"
+        }
+        
+    }
+} 

@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "required": ["success", "token", "user"],
+    "properties": {
+        "success": {
+            "type": "boolean",
+            "description": "Indicates if the login was successful"
+        },
+        "token": {
+            "type": "string",
+            "description": "JWT token for authentication"
+        },
+        "user": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "number",
+                    "description": "User's unique identifier"
+                },
+                "username": {
+                    "type": "string",
+                    "description": "User's username"
+                }
+            }
+        }
+    },
+    "example": {
+        "success": true,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+        "user": {
+            "id": 1,
+            "username": "admin"
+        }
+    }
+} 

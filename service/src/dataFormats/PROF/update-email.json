@@ -1,0 +1,14 @@
+{
+    "moduleCode": "PROF",
+    "submoduleCode": "EDIT_EMAIL",
+    "properties": {
+        "email" : {
+            "type": "string",
+            "description": "New email to update"
+        },
+        "isNewDataAvailable" : {
+            "type": "boolean",
+            "description": "Whether new data is available"
+        }
+    }
+}

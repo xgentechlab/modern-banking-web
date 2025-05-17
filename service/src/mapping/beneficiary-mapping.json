@@ -1,0 +1,42 @@
+{
+    "moduleCode": "BEN",
+    "moduleName": "Beneficiary",
+    "submodules": [
+        {
+            "submoduleCode": "BEN_LIST",
+            "submoduleName": "List Beneficiaries",
+            "requestFile": "get-beneficiaries-request.json",
+            "endpoint": "/api/beneficiaries"
+        },
+        {
+            "submoduleCode": "BEN_ADD",
+            "submoduleName": "Add Beneficiary",
+            "requestFile": "add-beneficiary-request.json",
+            "endpoint": "/api/beneficiaries"
+        },
+        {
+            "submoduleCode": "BEN_UPDATE",
+            "submoduleName": "Update Beneficiary",
+            "requestFile": "update-beneficiary-request.json",
+            "endpoint": "/api/beneficiaries/:beneficiaryId"
+        },
+        {
+            "submoduleCode": "BEN_DELETE",
+            "submoduleName": "Delete Beneficiary",
+            "requestFile": null,
+            "endpoint": "/api/beneficiaries/:beneficiaryId"
+        },
+        {
+            "submoduleCode": "BEN_DETAILS",
+            "submoduleName": "Beneficiary Details",
+            "requestFile": null,
+            "endpoint": "/api/beneficiaries/:beneficiaryId"
+        },
+        {
+            "submoduleCode": "BEN_VALIDATE",
+            "submoduleName": "Validate Beneficiary",
+            "requestFile": "validate-beneficiary-request.json",
+            "endpoint": "/api/beneficiaries/:beneficiaryId/verify"
+        }
+    ]
+} 

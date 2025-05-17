@@ -1,0 +1,69 @@
+{
+    "moduleCode": "ACC",
+    "moduleName": "Accounts",
+    "submodules": [
+        {
+            "submoduleCode": "ACC_LIST",
+            "submoduleName": "List Accounts"
+           
+        },
+        {
+            "submoduleCode": "ACC_TYPE",
+            "submoduleName": "Account Types"
+        },
+        {
+            "submoduleCode": "ACC_CREATE",
+            "submoduleName": "Create Account"
+        },
+        {
+            "submoduleCode": "ACC_UPDATE",
+            "submoduleName": "Update Account"
+        },
+        {
+            "submoduleCode": "ACC_DELETE",
+            "submoduleName": "Delete Account"
+        },
+        {
+            "submoduleCode": "ACC_DETAILS",
+            "submoduleName": "Account Details"
+        },
+        {
+            "submoduleCode": "ACC_BALANCE",
+            "submoduleName": "Account Balance"
+        },
+        {
+            "submoduleCode": "ACC_MINI_STMT",
+            "submoduleName": "Mini Statement"
+        },
+        {
+            "submoduleCode": "ACC_FULL_STMT",
+            "submoduleName": "Full Statement"
+        }
+    ],
+    "properties": {
+        "accountNumber": {
+            "type": "string",
+            "description": "Account Number"
+        },
+        "accountType": {
+            "type": "string",
+            "enum": ["SAV", "CUR"],
+            "description": "Account Type Savings or Current"
+        },
+        "accountStatus": {
+            "type": "string",
+            "enum": ["active", "inactive"],
+            "description": "Account Status active or inactive"
+        },
+        "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Start date for statement period"
+        },
+        "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "End date for statement period"
+        }
+    }
+} 

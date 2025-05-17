@@ -1,0 +1,101 @@
+{
+    "type": "object",
+    "required": ["success", "transfer"],
+    "properties": {
+        "success": {
+            "type": "boolean",
+            "description": "Indicates if the operation was successful"
+        },
+        "transfer": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Transfer ID"
+                },
+                "fromAccountId": {
+                    "type": "string",
+                    "description": "Source account ID"
+                },
+                "toAccountId": {
+                    "type": "string",
+                    "description": "Destination account ID"
+                },
+                "amount": {
+                    "type": "number",
+                    "description": "Transfer amount"
+                },
+                "currency": {
+                    "type": "string",
+                    "description": "Transfer currency"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of transfer",
+                    "enum": ["domestic", "international"]
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Transfer status",
+                    "enum": ["completed", "processing", "scheduled", "failed", "cancelled"]
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Transfer description"
+                },
+                "scheduledDate": {
+                    "type": ["string", "null"],
+                    "format": "date-time",
+                    "description": "Scheduled execution date for future transfers"
+                },
+                "executedDate": {
+                    "type": ["string", "null"],
+                    "format": "date-time",
+                    "description": "Actual execution date"
+                },
+                "reference": {
+                    "type": "string",
+                    "description": "Transfer reference"
+                },
+                "fees": {
+                    "type": "number",
+                    "description": "Transfer fees"
+                },
+                "exchangeRate": {
+                    "type": ["number", "null"],
+                    "description": "Exchange rate for international transfers"
+                },
+                "swiftCode": {
+                    "type": "string",
+                    "description": "SWIFT/BIC code for international transfers"
+                },
+                "recipientBank": {
+                    "type": "string",
+                    "description": "Recipient bank details"
+                },
+                "recipientCountry": {
+                    "type": "string",
+                    "description": "Recipient country"
+                }
+            }
+        }
+    },
+    "example": {
+        "success": true,
+        "transfer": {
+            "id": "TRF001",
+            "fromAccountId": "ACC001",
+            "toAccountId": "ACC003",
+            "amount": 1000.00,
+            "currency": "USD",
+            "type": "domestic",
+            "status": "completed",
+            "description": "Rent payment",
+            "scheduledDate": null,
+            "executedDate": "2024-01-15T10:30:00Z",
+            "reference": "RENT-JAN2024",
+            "fees": 0,
+            "exchangeRate": null
+        }
+    }
+} 

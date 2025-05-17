@@ -1,0 +1,60 @@
+{
+    "moduleCode": "LOAN",
+    "moduleName": "Loans",
+    "submodules": [
+        {
+            "submoduleCode": "LOAN_PRODUCTS",
+            "submoduleName": "Loan Products",
+            "requestFile": null,
+            "endpoint": "/api/loans/products"
+        },
+        {
+            "submoduleCode": "LOAN_PRODUCT_DETAILS",
+            "submoduleName": "Loan Product Details",
+            "requestFile": null,
+            "endpoint": "/api/loans/products/:productId"
+        },
+        {
+            "submoduleCode": "LOAN_APPLY",
+            "submoduleName": "Apply for Loan",
+            "requestFile": "apply-loan-request.json",
+            "endpoint": "/api/loans/apply"
+        },
+        {
+            "submoduleCode": "LOAN_LIST",
+            "submoduleName": "List User Loans",
+            "requestFile": "get-user-loans.json",
+            "endpoint": "/api/loans"
+        },
+        {
+            "submoduleCode": "LOAN_DETAILS",
+            "submoduleName": "Loan Details",
+            "requestFile": "get-user-loans.json",
+            "endpoint": "/api/loans/:loanId"
+        },
+        {
+            "submoduleCode": "LOAN_SCHEDULE",
+            "submoduleName": "Loan Schedule",
+            "requestFile": "get-loan-schedule.json",
+            "endpoint": "/api/loans/:loanId/schedule"
+        },
+        {
+            "submoduleCode": "LOAN_PAYMENT",
+            "submoduleName": "Make Payment",
+            "requestFile": "src/dataFormats/loan/make-payment-request.json",
+            "endpoint": "/api/loans/:loanId/payment"
+        },
+        {
+            "submoduleCode": "LOAN_STATEMENTS",
+            "submoduleName": "Loan Statements",
+            "requestFile": "get-statements-request.json",
+            "endpoint": "/api/loans/:loanId/statements"
+        },
+        {
+            "submoduleCode": "LOAN_CLOSURE",
+            "submoduleName": "Request Closure",
+            "requestFile": null,
+            "endpoint": "/api/loans/:loanId/closure"
+        }
+    ]
+} 

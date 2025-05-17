@@ -1,0 +1,10 @@
+{
+    "moduleCode": "PROF",
+    "submoduleCode": "EDIT_MOBILE_NUMBER",
+    "properties": {
+        "mobile" : {
+            "type": "string",
+            "description": "New mobile number to update"
+        }
+    }
+}

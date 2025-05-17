@@ -1,0 +1,115 @@
+{
+    "billers": [
+        {
+            "id": "BIL001",
+            "name": "City Power & Electric",
+            "category": "electricity",
+            "description": "Electricity utility provider",
+            "status": "active",
+            "paymentModes": ["netbanking", "cards", "upi"],
+            "fields": [
+                {
+                    "name": "consumer_number",
+                    "label": "Consumer Number",
+                    "type": "string",
+                    "required": true,
+                    "validation": "^[0-9]{10}$"
+                },
+                {
+                    "name": "bill_number",
+                    "label": "Bill Number",
+                    "type": "string",
+                    "required": false
+                }
+            ],
+            "convenienceFee": {
+                "type": "percentage",
+                "value": 1,
+                "min": 10,
+                "max": 100
+            }
+        },
+        {
+            "id": "BIL002",
+            "name": "Metro Water Supply",
+            "category": "water",
+            "description": "Water utility provider",
+            "status": "active",
+            "paymentModes": ["netbanking", "cards"],
+            "fields": [
+                {
+                    "name": "connection_id",
+                    "label": "Connection ID",
+                    "type": "string",
+                    "required": true,
+                    "validation": "^[A-Z0-9]{8}$"
+                }
+            ],
+            "convenienceFee": {
+                "type": "fixed",
+                "value": 20
+            }
+        },
+        {
+            "id": "BIL003",
+            "name": "City Gas Corporation",
+            "category": "gas",
+            "description": "Natural gas provider",
+            "status": "active",
+            "paymentModes": ["netbanking", "cards", "upi"],
+            "fields": [
+                {
+                    "name": "account_number",
+                    "label": "Account Number",
+                    "type": "string",
+                    "required": true,
+                    "validation": "^[0-9]{12}$"
+                }
+            ],
+            "convenienceFee": {
+                "type": "percentage",
+                "value": 0.5,
+                "min": 5,
+                "max": 50
+            }
+        }
+    ],
+    "registeredBillers": [
+        {
+            "id": "RB001",
+            "userId": 1,
+            "billerId": "BIL001",
+            "nickname": "Home Electricity",
+            "status": "active",
+            "autoPayEnabled": false,
+            "fields": {
+                "consumer_number": "1234567890"
+            },
+            "createdAt": "2024-01-01T10:00:00Z",
+            "lastUsed": "2024-01-15T14:30:00Z"
+        }
+    ],
+    "billPayments": [
+        {
+            "id": "BP001",
+            "userId": 1,
+            "billerId": "BIL001",
+            "registeredBillerId": "RB001",
+            "amount": 1500,
+            "convenienceFee": 15,
+            "totalAmount": 1515,
+            "status": "completed",
+            "paymentMode": "cards",
+            "paymentDetails": {
+                "cardId": "CARD001",
+                "transactionId": "TXN001"
+            },
+            "billDetails": {
+                "billNumber": "BILL123",
+                "billDate": "2024-01-01T00:00:00Z",
+                "dueDate": "2024-01-15T00:00:00Z"
+            },
+            "paidAt": "2024-01-10T14:30:00Z"
+        }
+    ]
+} 

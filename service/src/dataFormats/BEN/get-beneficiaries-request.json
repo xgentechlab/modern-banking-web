@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+        "bankName": {
+            "type": "string",
+            "description": "Filter by bank name"
+        },
+        "page": {
+            "type": "number",
+            "minimum": 1,
+            "description": "Page number for pagination"
+        },
+        "limit": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 100,
+            "description": "Number of records per page"
+        }
+    }
+} 

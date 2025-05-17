@@ -1,0 +1,23 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+        "accountNumber": {
+            "type": "string",
+            "description": "Account Number"
+        },
+        "accountType": {
+            "type": "string",   
+            "enum": ["SAV", "CUR"],
+            "description": "Account Type Savings or Current"
+        },
+        "accountStatus": {
+            "type": "string",
+            "enum": ["active", "inactive"],
+            "description": "Account Status active or inactive"
+        }
+    }
+}
+       
+}

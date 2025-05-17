@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "required": ["amount", "paymentMode"],
+    "properties": {
+        "amount": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Payment amount"
+        },
+        "paymentMode": {
+            "type": "string",
+            "enum": ["auto-debit", "netbanking", "card"],
+            "description": "Mode of payment"
+        },
+        "transactionId": {
+            "type": "string",
+            "description": "Transaction ID for the payment"
+        }
+    }
+} 

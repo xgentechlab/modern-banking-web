@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    "required": ["pin"],
+    "properties": {
+        "pin": {
+            "type": "string",
+            "pattern": "^[0-9]{4}$",
+            "description": "4-digit PIN for the card"
+        }
+    }
+} 

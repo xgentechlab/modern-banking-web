@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "loanType": {
+            "type": "string",
+            "enum": ["personal", "business","car","home","education","gold","other"],
+            "description": "Loan Type personal, business, car, home, education, gold, other"
+        }
+    }
+}

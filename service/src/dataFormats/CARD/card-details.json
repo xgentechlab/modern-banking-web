@@ -1,0 +1,23 @@
+{
+    "moduleCode": "CARD",
+    "submoduleCode": "CARD_DETAILS",
+    "properties": {
+        "cardId": {
+            "type": "string",
+            "description": "Card ID"
+        },
+        "cardType": {
+            "type": "string",
+            "description": "Card Type, debit or credit"
+        },
+        "last4Digits    ": {
+            "type": "string",
+            "description": "Last 4 digits of the card number"
+        },
+        "cardStatus": {
+            "type": "string",
+            "description": "Card Status, active or inactive"
+        }
+        
+    }
+}

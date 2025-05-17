@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "loanId": {
+            "type": "string",
+            "description": "Loan ID"
+        },
+        "loanType": {
+            "type": "string",
+            "enum": ["personal", "business","car","home","education","gold","other"],
+            "description": "Loan Type personal, business, car, home, education, gold, other"
+            
+        },
+        "loanAmount": {
+            "type": "number",
+            "description": "Loan Amount"
+        }
+    }
+}

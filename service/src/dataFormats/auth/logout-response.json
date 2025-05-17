@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "required": ["success", "message"],
+    "properties": {
+        "success": {
+            "type": "boolean",
+            "description": "Indicates if the logout was successful"
+        },
+        "message": {
+            "type": "string",
+            "description": "Status message"
+        }
+    },
+    "example": {
+        "success": true,
+        "message": "Logged out successfully"
+    }
+} 

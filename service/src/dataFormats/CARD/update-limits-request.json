@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "required": ["limits"],
+    "properties": {
+        "limits": {
+            "type": "object",
+            "properties": {
+                "daily": {
+                    "type": "object",
+                    "properties": {
+                        "withdrawal": {
+                            "type": "number",
+                            "minimum": 0,
+                            "description": "Daily withdrawal limit"
+                        },
+                        "purchase": {
+                            "type": "number",
+                            "minimum": 0,
+                            "description": "Daily purchase limit"
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

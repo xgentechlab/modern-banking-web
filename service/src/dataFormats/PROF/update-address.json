@@ -1,0 +1,10 @@
+{
+    "moduleCode": "PROF",
+    "submoduleCode": "EDIT_ADDRESS",
+    "properties": {
+        "newAddress" : {
+            "type": "string",
+            "description": "New address to update"
+        }
+    }
+}

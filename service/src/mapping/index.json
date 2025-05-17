@@ -1,0 +1,42 @@
+[
+    {
+        "moduleCode": "ACC",
+        "moduleName": "Accounts",
+        "mappingFile": "account-mapping.json"
+    },
+    {
+        "moduleCode": "BEN",
+        "moduleName": "Beneficiary",
+        "mappingFile": "beneficiary-mapping.json"
+    },
+    {
+        "moduleCode": "BILL",
+        "moduleName": "Bill Payment",
+        "mappingFile": "bill-payment-mapping.json"
+    },
+    {
+        "moduleCode": "CARD",
+        "moduleName": "Cards",
+        "mappingFile": "card-mapping.json"
+    },
+    {
+        "moduleCode": "LOAN",
+        "moduleName": "Loans",
+        "mappingFile": "loan-mapping.json"
+    },
+    {
+        "moduleCode": "TRF",
+        "moduleName": "Transfers/transactions",
+        "mappingFile": "transfer-mapping.json"
+    },
+    {
+        "moduleCode": "PROF",
+        "moduleName": "Profile",
+        "mappingFile": "profile-mapping.json"
+    },
+    {
+        "moduleCode": "ANALYTICS",
+        "moduleName": "Analytics",
+        "mappingFile": "analytics-mapping.json"
+    }
+] 

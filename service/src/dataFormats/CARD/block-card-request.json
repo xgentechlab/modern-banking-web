@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    
+    "properties": {
+        "reason": {
+            "type": "string",
+            "enum": ["lost", "stolen", "damaged", "suspicious_activity"],
+            "description": "Reason for blocking the card",
+            "required": true
+        },
+        "cardId": {
+            "type": "string",
+            "description": "Card ID"
+           
+        },
+        "cardType": {
+            "type": "string",
+            "enum": ["debit", "credit"],
+            "description": "Card type"
+            
+        }
+    }
+} 

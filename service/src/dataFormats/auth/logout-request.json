@@ -1,0 +1,7 @@
+{
+    "type": "object",
+    "description": "No request body required, uses JWT token from Authorization header",
+    "headers": {
+        "Authorization": "Bearer <token>"
+    }
+} 

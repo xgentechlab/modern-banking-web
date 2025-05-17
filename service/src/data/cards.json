@@ -1,0 +1,1231 @@
+{
+    "cards": [
+        {
+            "id": "CARD001",
+            "userId": 14785236987456,
+            "accountId": "100000000002",
+            "productId": "DC001",
+            "cardNumber": "xxxx-xxxx-xxxx-1001",
+            "cardType": "debit",
+            "nameOnCard": "PRIYA PATEL",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "daily": {
+                    "withdrawal": {
+                        "total": 500,
+                        "consumed": 200,
+                        "available": 300
+                    },
+                    "purchase": {
+                        "total": 1000,
+                        "consumed": 300,
+                        "available": 700
+                    },
+                    "online": {
+                        "total": 500,
+                        "consumed": 0,
+                        "available": 500
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 10000,
+                        "consumed": 2000,
+                        "available": 8000
+                    },
+                    "purchase": {
+                        "total": 20000,
+                        "consumed": 5000,
+                        "available": 15000
+                    },
+                    "online": {
+                        "total": 10000,
+                        "consumed": 0,
+                        "available": 10000
+                    }
+                }
+            },
+            "rewardsPoints": 100,
+            "issuedDate": "2023-01-15T10:00:00Z",
+            "activatedDate": "2023-01-16T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z"
+        },
+        {
+            "id": "CARD002",
+            "userId": 14785236987457,
+            "accountId": "100000000003",
+            "productId": "DC001",
+            "cardNumber": "xxxx-xxxx-xxxx-1002",
+            "cardType": "debit",
+            "nameOnCard": "ARJUN KUMAR",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "daily": {
+                    "withdrawal": {
+                        "total": 500,
+                        "consumed": 0,
+                        "available": 500
+                    },
+                    "purchase": {
+                        "total": 1000,
+                        "consumed": 200,
+                        "available": 800
+                    },
+                    "online": {
+                        "total": 500,
+                        "consumed": 100,
+                        "available": 400
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 10000,
+                        "consumed": 1000,
+                        "available": 9000
+                    },
+                    "purchase": {
+                        "total": 20000,
+                        "consumed": 3000,
+                        "available": 17000
+                    },
+                    "online": {
+                        "total": 10000,
+                        "consumed": 2000,
+                        "available": 8000
+                    }
+                }
+            },
+            "rewardsPoints": 50,
+            "issuedDate": "2023-02-20T11:00:00Z",
+            "activatedDate": "2023-02-21T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z"
+        },
+        {
+            "id": "CARD003",
+            "userId": 14785236987458,
+            "accountId": "100000000004",
+            "productId": "DC001",
+            "cardNumber": "xxxx-xxxx-xxxx-1003",
+            "cardType": "debit",
+            "nameOnCard": "RAHUL SHARMA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "daily": {
+                    "withdrawal": {
+                        "total": 500,
+                        "consumed": 300,
+                        "available": 200
+                    },
+                    "purchase": {
+                        "total": 1000,
+                        "consumed": 400,
+                        "available": 600
+                    },
+                    "online": {
+                        "total": 500,
+                        "consumed": 200,
+                        "available": 300
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 10000,
+                        "consumed": 3000,
+                        "available": 7000
+                    },
+                    "purchase": {
+                        "total": 20000,
+                        "consumed": 8000,
+                        "available": 12000
+                    },
+                    "online": {
+                        "total": 10000,
+                        "consumed": 3000,
+                        "available": 7000
+                    }
+                }
+            },
+            "rewardsPoints": 75,
+            "issuedDate": "2023-03-10T09:00:00Z",
+            "activatedDate": "2023-03-11T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z"
+        },
+        {
+            "id": "CARD004",
+            "userId": 14785236987459,
+            "accountId": "100000000005",
+            "productId": "DC001",
+            "cardNumber": "xxxx-xxxx-xxxx-2001",
+            "cardType": "debit",
+            "nameOnCard": "NEHA GUPTA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "daily": {
+                    "withdrawal": {
+                        "total": 50000,
+                        "consumed": 10000,
+                        "available": 40000
+                    },
+                    "purchase": {
+                        "total": 100000,
+                        "consumed": 25000,
+                        "available": 75000
+                    },
+                    "online": {
+                        "total": 100000,
+                        "consumed": 15000,
+                        "available": 85000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 1000000,
+                        "consumed": 200000,
+                        "available": 800000
+                    },
+                    "purchase": {
+                        "total": 2000000,
+                        "consumed": 500000,
+                        "available": 1500000
+                    },
+                    "online": {
+                        "total": 2000000,
+                        "consumed": 300000,
+                        "available": 1700000
+                    }
+                }
+            },
+            "rewardsPoints": 200,
+            "issuedDate": "2023-04-15T14:00:00Z",
+            "activatedDate": "2023-04-16T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z"
+        },
+        {
+            "id": "CARD005",
+            "userId": 14785236987459,
+            "accountId": "100000000005",
+            "productId": "CC001",
+            "cardNumber": "xxxx-xxxx-xxxx-2002",
+            "cardType": "credit",
+            "nameOnCard": "NEHA GUPTA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "overall": {
+                    "total": 100000,
+                    "consumed": 15000,
+                    "available": 85000
+                },
+                "daily": {
+                    "withdrawal": {
+                        "total": 25000,
+                        "consumed": 5000,
+                        "available": 20000
+                    },
+                    "purchase": {
+                        "total": 100000,
+                        "consumed": 15000,
+                        "available": 85000
+                    },
+                    "online": {
+                        "total": 50000,
+                        "consumed": 8000,
+                        "available": 42000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 100000,
+                        "consumed": 20000,
+                        "available": 80000
+                    },
+                    "purchase": {
+                        "total": 100000,
+                        "consumed": 15000,
+                        "available": 85000
+                    },
+                    "online": {
+                        "total": 100000,
+                        "consumed": 12000,
+                        "available": 88000
+                    }
+                }
+            },
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 15000,
+            "minimumDue": 1500,
+            "lastStatementBalance": 15000,
+            "rewardsPoints": 1000,
+            "issuedDate": "2023-04-15T14:00:00Z",
+            "activatedDate": "2023-04-16T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "billingAddress": {
+                "street": "101 Pro Circle",
+                "city": "Seattle",
+                "state": "WA",
+                "country": "USA",
+                "zipCode": "98101"
+            }
+        },
+        {
+            "id": "CARD006",
+            "userId": 14785236987460,
+            "accountId": "100000000007",
+            "productId": "DC001",
+            "cardNumber": "xxxx-xxxx-xxxx-2003",
+            "cardType": "debit",
+            "nameOnCard": "VIKRAM SINGH",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "daily": {
+                    "withdrawal": {
+                        "total": 50000,
+                        "consumed": 15000,
+                        "available": 35000
+                    },
+                    "purchase": {
+                        "total": 100000,
+                        "consumed": 30000,
+                        "available": 70000
+                    },
+                    "online": {
+                        "total": 100000,
+                        "consumed": 25000,
+                        "available": 75000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 1000000,
+                        "consumed": 250000,
+                        "available": 750000
+                    },
+                    "purchase": {
+                        "total": 2000000,
+                        "consumed": 600000,
+                        "available": 1400000
+                    },
+                    "online": {
+                        "total": 2000000,
+                        "consumed": 400000,
+                        "available": 1600000
+                    }
+                }
+            },
+            "rewardsPoints": 150,
+            "issuedDate": "2023-05-20T16:00:00Z",
+            "activatedDate": "2023-05-21T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z"
+        },
+        {
+            "id": "CARD007",
+            "userId": 14785236987460,
+            "accountId": "100000000007",
+            "productId": "CC001",
+            "cardNumber": "xxxx-xxxx-xxxx-2004",
+            "cardType": "credit",
+            "nameOnCard": "VIKRAM SINGH",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "overall": {
+                    "total": 90000,
+                    "consumed": 15000,
+                    "available": 75000
+                },
+                "daily": {
+                    "withdrawal": {
+                        "total": 25000,
+                        "consumed": 5000,
+                        "available": 20000
+                    },
+                    "purchase": {
+                        "total": 90000,
+                        "consumed": 15000,
+                        "available": 75000
+                    },
+                    "online": {
+                        "total": 45000,
+                        "consumed": 10000,
+                        "available": 35000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 90000,
+                        "consumed": 25000,
+                        "available": 65000
+                    },
+                    "purchase": {
+                        "total": 90000,
+                        "consumed": 15000,
+                        "available": 75000
+                    },
+                    "online": {
+                        "total": 90000,
+                        "consumed": 20000,
+                        "available": 70000
+                    }
+                }
+            },
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 15000,
+            "minimumDue": 1500,
+            "lastStatementBalance": 15000,
+            "rewardsPoints": 800,
+            "issuedDate": "2023-05-20T16:00:00Z",
+            "activatedDate": "2023-05-21T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "billingAddress": {
+                "street": "202 Work Lane",
+                "city": "Austin",
+                "state": "TX",
+                "country": "USA",
+                "zipCode": "73301"
+            }
+        },
+        {
+            "id": "CARD008",
+            "userId": 14785236987462,
+            "accountId": "100000000010",
+            "productId": "DC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3001",
+            "cardType": "debit",
+            "nameOnCard": "RAJESH MALHOTRA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "daily": {
+                    "withdrawal": {
+                        "total": 200000,
+                        "consumed": 50000,
+                        "available": 150000
+                    },
+                    "purchase": {
+                        "total": 500000,
+                        "consumed": 150000,
+                        "available": 350000
+                    },
+                    "online": {
+                        "total": 500000,
+                        "consumed": 100000,
+                        "available": 400000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 5000000,
+                        "consumed": 1000000,
+                        "available": 4000000
+                    },
+                    "purchase": {
+                        "total": 10000000,
+                        "consumed": 2500000,
+                        "available": 7500000
+                    },
+                    "online": {
+                        "total": 10000000,
+                        "consumed": 1500000,
+                        "available": 8500000
+                    }
+                }
+            },
+            "rewardsPoints": 5000,
+            "issuedDate": "2023-07-05T11:00:00Z",
+            "activatedDate": "2023-07-06T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM"
+        },
+        {
+            "id": "CARD009",
+            "userId": 14785236987462,
+            "accountId": "100000000011",
+            "productId": "DC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3002",
+            "cardType": "debit",
+            "nameOnCard": "RAJESH MALHOTRA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "daily": {
+                    "withdrawal": {
+                        "total": 200000,
+                        "consumed": 40000,
+                        "available": 160000
+                    },
+                    "purchase": {
+                        "total": 500000,
+                        "consumed": 120000,
+                        "available": 380000
+                    },
+                    "online": {
+                        "total": 500000,
+                        "consumed": 80000,
+                        "available": 420000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 5000000,
+                        "consumed": 800000,
+                        "available": 4200000
+                    },
+                    "purchase": {
+                        "total": 10000000,
+                        "consumed": 2000000,
+                        "available": 8000000
+                    },
+                    "online": {
+                        "total": 10000000,
+                        "consumed": 1200000,
+                        "available": 8800000
+                    }
+                }
+            },
+            "rewardsPoints": 3000,
+            "issuedDate": "2023-07-05T11:00:00Z",
+            "activatedDate": "2023-07-06T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM"
+        },
+        {
+            "id": "CARD010",
+            "userId": 14785236987462,
+            "accountId": "100000000010",
+            "productId": "CC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3003",
+            "cardType": "credit",
+            "nameOnCard": "RAJESH MALHOTRA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "overall": {
+                    "total": 1000000,
+                    "consumed": 200000,
+                    "available": 800000
+                },
+                "daily": {
+                    "withdrawal": {
+                        "total": 200000,
+                        "consumed": 50000,
+                        "available": 150000
+                    },
+                    "purchase": {
+                        "total": 1000000,
+                        "consumed": 200000,
+                        "available": 800000
+                    },
+                    "online": {
+                        "total": 500000,
+                        "consumed": 100000,
+                        "available": 400000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 1000000,
+                        "consumed": 200000,
+                        "available": 800000
+                    },
+                    "purchase": {
+                        "total": 1000000,
+                        "consumed": 200000,
+                        "available": 800000
+                    },
+                    "online": {
+                        "total": 1000000,
+                        "consumed": 150000,
+                        "available": 850000
+                    }
+                }
+            },
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 200000,
+            "minimumDue": 20000,
+            "lastStatementBalance": 200000,
+            "rewardsPoints": 50000,
+            "issuedDate": "2023-07-05T11:00:00Z",
+            "activatedDate": "2023-07-06T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM",
+            "billingAddress": {
+                "street": "404 Wealth Ave",
+                "city": "San Francisco",
+                "state": "CA",
+                "country": "USA",
+                "zipCode": "94101"
+            }
+        },
+        {
+            "id": "CARD011",
+            "userId": 14785236987462,
+            "accountId": "100000000010",
+            "productId": "CC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3004",
+            "cardType": "credit",
+            "nameOnCard": "RAJESH MALHOTRA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "overall": {
+                    "total": 500000,
+                    "consumed": 100000,
+                    "available": 400000
+                },
+                "daily": {
+                    "withdrawal": {
+                        "total": 100000,
+                        "consumed": 25000,
+                        "available": 75000
+                    },
+                    "purchase": {
+                        "total": 500000,
+                        "consumed": 100000,
+                        "available": 400000
+                    },
+                    "online": {
+                        "total": 250000,
+                        "consumed": 50000,
+                        "available": 200000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 500000,
+                        "consumed": 100000,
+                        "available": 400000
+                    },
+                    "purchase": {
+                        "total": 500000,
+                        "consumed": 100000,
+                        "available": 400000
+                    },
+                    "online": {
+                        "total": 500000,
+                        "consumed": 75000,
+                        "available": 425000
+                    }
+                }
+            },
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 100000,
+            "minimumDue": 10000,
+            "lastStatementBalance": 100000,
+            "rewardsPoints": 25000,
+            "issuedDate": "2023-07-05T11:00:00Z",
+            "activatedDate": "2023-07-06T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM",
+            "billingAddress": {
+                "street": "404 Wealth Ave",
+                "city": "San Francisco",
+                "state": "CA",
+                "country": "USA",
+                "zipCode": "94101"
+            }
+        },
+        {
+            "id": "CARD012",
+            "userId": 14785236987461,
+            "accountId": "100000000009",
+            "productId": "DC001",
+            "cardNumber": "xxxx-xxxx-xxxx-2005",
+            "cardType": "debit",
+            "nameOnCard": "ANJALI VERMA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "daily": {
+                    "withdrawal": {
+                        "total": 50000,
+                        "consumed": 12000,
+                        "available": 38000
+                    },
+                    "purchase": {
+                        "total": 100000,
+                        "consumed": 35000,
+                        "available": 65000
+                    },
+                    "online": {
+                        "total": 100000,
+                        "consumed": 28000,
+                        "available": 72000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 1000000,
+                        "consumed": 180000,
+                        "available": 820000
+                    },
+                    "purchase": {
+                        "total": 2000000,
+                        "consumed": 550000,
+                        "available": 1450000
+                    },
+                    "online": {
+                        "total": 2000000,
+                        "consumed": 420000,
+                        "available": 1580000
+                    }
+                }
+            },
+            "rewardsPoints": 250,
+            "issuedDate": "2023-06-10T13:00:00Z",
+            "activatedDate": "2023-06-11T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z"
+        },
+        {
+            "id": "CARD013",
+            "userId": 14785236987461,
+            "accountId": "100000000009",
+            "productId": "CC001",
+            "cardNumber": "xxxx-xxxx-xxxx-2006",
+            "cardType": "credit",
+            "nameOnCard": "ANJALI VERMA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "overall": {
+                    "total": 120000,
+                    "consumed": 20000,
+                    "available": 100000
+                },
+                "daily": {
+                    "withdrawal": {
+                        "total": 30000,
+                        "consumed": 5000,
+                        "available": 25000
+                    },
+                    "purchase": {
+                        "total": 120000,
+                        "consumed": 20000,
+                        "available": 100000
+                    },
+                    "online": {
+                        "total": 60000,
+                        "consumed": 15000,
+                        "available": 45000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 120000,
+                        "consumed": 25000,
+                        "available": 95000
+                    },
+                    "purchase": {
+                        "total": 120000,
+                        "consumed": 20000,
+                        "available": 100000
+                    },
+                    "online": {
+                        "total": 120000,
+                        "consumed": 18000,
+                        "available": 102000
+                    }
+                }
+            },
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 20000,
+            "minimumDue": 2000,
+            "lastStatementBalance": 20000,
+            "rewardsPoints": 1200,
+            "issuedDate": "2023-06-10T13:00:00Z",
+            "activatedDate": "2023-06-11T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "billingAddress": {
+                "street": "303 Career St",
+                "city": "Denver",
+                "state": "CO",
+                "country": "USA",
+                "zipCode": "80201"
+            }
+        },
+        {
+            "id": "CARD014",
+            "userId": 14785236987463,
+            "accountId": "100000000013",
+            "productId": "DC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3005",
+            "cardType": "debit",
+            "nameOnCard": "DEEPIKA REDDY",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "daily": {
+                    "withdrawal": {
+                        "total": 200000,
+                        "consumed": 45000,
+                        "available": 155000
+                    },
+                    "purchase": {
+                        "total": 500000,
+                        "consumed": 180000,
+                        "available": 320000
+                    },
+                    "online": {
+                        "total": 500000,
+                        "consumed": 120000,
+                        "available": 380000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 5000000,
+                        "consumed": 900000,
+                        "available": 4100000
+                    },
+                    "purchase": {
+                        "total": 10000000,
+                        "consumed": 2800000,
+                        "available": 7200000
+                    },
+                    "online": {
+                        "total": 10000000,
+                        "consumed": 1800000,
+                        "available": 8200000
+                    }
+                }
+            },
+            "rewardsPoints": 6000,
+            "issuedDate": "2023-08-15T15:00:00Z",
+            "activatedDate": "2023-08-16T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM"
+        },
+        {
+            "id": "CARD015",
+            "userId": 14785236987463,
+            "accountId": "100000000014",
+            "productId": "DC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3006",
+            "cardType": "debit",
+            "nameOnCard": "DEEPIKA REDDY",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "daily": {
+                    "withdrawal": {
+                        "total": 200000,
+                        "consumed": 35000,
+                        "available": 165000
+                    },
+                    "purchase": {
+                        "total": 500000,
+                        "consumed": 150000,
+                        "available": 350000
+                    },
+                    "online": {
+                        "total": 500000,
+                        "consumed": 100000,
+                        "available": 400000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 5000000,
+                        "consumed": 700000,
+                        "available": 4300000
+                    },
+                    "purchase": {
+                        "total": 10000000,
+                        "consumed": 2200000,
+                        "available": 7800000
+                    },
+                    "online": {
+                        "total": 10000000,
+                        "consumed": 1500000,
+                        "available": 8500000
+                    }
+                }
+            },
+            "rewardsPoints": 4000,
+            "issuedDate": "2023-08-15T15:00:00Z",
+            "activatedDate": "2023-08-16T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM"
+        },
+        {
+            "id": "CARD016",
+            "userId": 14785236987463,
+            "accountId": "100000000013",
+            "productId": "CC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3007",
+            "cardType": "credit",
+            "nameOnCard": "DEEPIKA REDDY",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "limits": {
+                "overall": {
+                    "total": 1500000,
+                    "consumed": 300000,
+                    "available": 1200000
+                },
+                "daily": {
+                    "withdrawal": {
+                        "total": 300000,
+                        "consumed": 75000,
+                        "available": 225000
+                    },
+                    "purchase": {
+                        "total": 1500000,
+                        "consumed": 300000,
+                        "available": 1200000
+                    },
+                    "online": {
+                        "total": 750000,
+                        "consumed": 150000,
+                        "available": 600000
+                    }
+                },
+                "monthly": {
+                    "withdrawal": {
+                        "total": 1500000,
+                        "consumed": 300000,
+                        "available": 1200000
+                    },
+                    "purchase": {
+                        "total": 1500000,
+                        "consumed": 300000,
+                        "available": 1200000
+                    },
+                    "online": {
+                        "total": 1500000,
+                        "consumed": 225000,
+                        "available": 1275000
+                    }
+                }
+            },
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 300000,
+            "minimumDue": 30000,
+            "lastStatementBalance": 300000,
+            "rewardsPoints": 75000,
+            "issuedDate": "2023-08-15T15:00:00Z",
+            "activatedDate": "2023-08-16T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM",
+            "billingAddress": {
+                "street": "505 Fortune Rd",
+                "city": "Miami",
+                "state": "FL",
+                "country": "USA",
+                "zipCode": "33101"
+            }
+        },
+        {
+            "id": "CARD017",
+            "userId": 14785236987463,
+            "accountId": "100000000013",
+            "productId": "CC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3008",
+            "cardType": "credit",
+            "nameOnCard": "DEEPIKA REDDY",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "creditLimit": 750000,
+            "availableLimit": 600000,
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 150000,
+            "minimumDue": 15000,
+            "lastStatementBalance": 150000,
+            "rewardsPoints": 35000,
+            "issuedDate": "2023-08-15T15:00:00Z",
+            "activatedDate": "2023-08-16T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM",
+            "billingAddress": {
+                "street": "505 Fortune Rd",
+                "city": "Miami",
+                "state": "FL",
+                "country": "USA",
+                "zipCode": "33101"
+            }
+        },
+        {
+            "id": "CARD018",
+            "userId": 14785236987464,
+            "accountId": "100000000015",
+            "productId": "DC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3009",
+            "cardType": "debit",
+            "nameOnCard": "AMIT SHAH",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "dailyLimits": {
+                "withdrawal": 10000,
+                "purchase": 50000
+            },
+            "rewardsPoints": 5500,
+            "issuedDate": "2023-09-20T12:00:00Z",
+            "activatedDate": "2023-09-21T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM"
+        },
+        {
+            "id": "CARD019",
+            "userId": 14785236987464,
+            "accountId": "100000000015",
+            "productId": "DC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3010",
+            "cardType": "debit",
+            "nameOnCard": "AMIT SHAH",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "dailyLimits": {
+                "withdrawal": 10000,
+                "purchase": 50000
+            },
+            "rewardsPoints": 3500,
+            "issuedDate": "2023-09-20T12:00:00Z",
+            "activatedDate": "2023-09-21T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM"
+        },
+        {
+            "id": "CARD020",
+            "userId": 14785236987464,
+            "accountId": "100000000015",
+            "productId": "CC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3011",
+            "cardType": "credit",
+            "nameOnCard": "AMIT SHAH",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "creditLimit": 1200000,
+            "availableLimit": 1000000,
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 200000,
+            "minimumDue": 20000,
+            "lastStatementBalance": 200000,
+            "rewardsPoints": 60000,
+            "issuedDate": "2023-09-20T12:00:00Z",
+            "activatedDate": "2023-09-21T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM",
+            "billingAddress": {
+                "street": "606 Elite Blvd",
+                "city": "Los Angeles",
+                "state": "CA",
+                "country": "USA",
+                "zipCode": "90001"
+            }
+        },
+        {
+            "id": "CARD021",
+            "userId": 14785236987464,
+            "accountId": "100000000015",
+            "productId": "CC002",
+            "cardNumber": "xxxx-xxxx-xxxx-3012",
+            "cardType": "credit",
+            "nameOnCard": "AMIT SHAH",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "creditLimit": 600000,
+            "availableLimit": 500000,
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 100000,
+            "minimumDue": 10000,
+            "lastStatementBalance": 100000,
+            "rewardsPoints": 30000,
+            "issuedDate": "2023-09-20T12:00:00Z",
+            "activatedDate": "2023-09-21T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "cardTier": "PLATINUM",
+            "billingAddress": {
+                "street": "606 Elite Blvd",
+                "city": "Los Angeles",
+                "state": "CA",
+                "country": "USA",
+                "zipCode": "90001"
+            }
+        },
+        {
+            "id": "CARD022",
+            "userId": 14785236987465,
+            "accountId": "100000000017",
+            "productId": "DC001",
+            "cardNumber": "xxxx-xxxx-xxxx-2007",
+            "cardType": "debit",
+            "nameOnCard": "MEERA KAPOOR",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "dailyLimits": {
+                "withdrawal": 2000,
+                "purchase": 5000
+            },
+            "rewardsPoints": 180,
+            "issuedDate": "2023-10-10T10:00:00Z",
+            "activatedDate": "2023-10-11T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z"
+        },
+        {
+            "id": "CARD023",
+            "userId": 14785236987465,
+            "accountId": "100000000017",
+            "productId": "CC001",
+            "cardNumber": "xxxx-xxxx-xxxx-2008",
+            "cardType": "credit",
+            "nameOnCard": "MEERA KAPOOR",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "creditLimit": 150000,
+            "availableLimit": 130000,
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 20000,
+            "minimumDue": 2000,
+            "lastStatementBalance": 20000,
+            "rewardsPoints": 1500,
+            "issuedDate": "2023-10-10T10:00:00Z",
+            "activatedDate": "2023-10-11T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "billingAddress": {
+                "street": "707 Senior Lane",
+                "city": "Portland",
+                "state": "OR",
+                "country": "USA",
+                "zipCode": "97201"
+            }
+        },
+        {
+            "id": "CARD024",
+            "userId": 14785236987466,
+            "accountId": "100000000019",
+            "productId": "DC001",
+            "cardNumber": "xxxx-xxxx-xxxx-2009",
+            "cardType": "debit",
+            "nameOnCard": "SANJAY MEHTA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "dailyLimits": {
+                "withdrawal": 2000,
+                "purchase": 5000
+            },
+            "rewardsPoints": 220,
+            "issuedDate": "2023-11-05T14:00:00Z",
+            "activatedDate": "2023-11-06T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z"
+        },
+        {
+            "id": "CARD025",
+            "userId": 14785236987466,
+            "accountId": "100000000019",
+            "productId": "CC001",
+            "cardNumber": "xxxx-xxxx-xxxx-2010",
+            "cardType": "credit",
+            "nameOnCard": "SANJAY MEHTA",
+            "expiryDate": "12/26",
+            "cvv": "xxx",
+            "status": "active",
+            "activationStatus": "activated",
+            "pinSet": true,
+            "creditLimit": 180000,
+            "availableLimit": 150000,
+            "statementDate": 1,
+            "dueDate": 18,
+            "outstandingAmount": 30000,
+            "minimumDue": 3000,
+            "lastStatementBalance": 30000,
+            "rewardsPoints": 1800,
+            "issuedDate": "2023-11-05T14:00:00Z",
+            "activatedDate": "2023-11-06T10:30:00Z",
+            "lastUsedDate": "2024-01-16T14:20:00Z",
+            "billingAddress": {
+                "street": "808 Wisdom Rd",
+                "city": "Phoenix",
+                "state": "AZ",
+                "country": "USA",
+                "zipCode": "85001"
+            }
+        }
+    ],
+    "cardTransactions": []
+} 

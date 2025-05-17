@@ -1,0 +1,281 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "admin",
+            "password": "admin123",
+            "role": "admin",
+            "name": "Admin User",
+            "email": "admin@example.com",
+            "status": "active"
+        },
+        {
+            "id": 14785236987456,
+            "username": "priya.patel",
+            "password": "pass123",
+            "role": "user",
+            "name": "Priya Patel",
+            "email": "priya.p@example.com",
+            "dob": "2007-05-15",
+            "age": 16,
+            "phone": "+919876543210",
+            "address": {
+                "street": "123 Teen St",
+                "city": "New York",
+                "state": "NY",
+                "country": "USA",
+                "zipCode": "10001"
+            },
+            "guardianDetails": {
+                "name": "Mary Johnson",
+                "relationship": "Mother",
+                "phone": "+1234567891"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-01-15T10:00:00Z"
+        },
+        {
+            "id": 14785236987457,
+            "username": "arjun.kumar",
+            "password": "pass123",
+            "role": "user",
+            "name": "Arjun Kumar",
+            "email": "arjun.k@example.com",
+            "dob": "2006-08-20",
+            "age": 17,
+            "phone": "+919876543211",
+            "address": {
+                "street": "456 Youth Ave",
+                "city": "Boston",
+                "state": "MA",
+                "country": "USA",
+                "zipCode": "02108"
+            },
+            "guardianDetails": {
+                "name": "James Wilson",
+                "relationship": "Father",
+                "phone": "+1234567893"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-02-20T11:00:00Z"
+        },
+        {
+            "id": 14785236987458,
+            "username": "rahul.sharma",
+            "password": "pass123",
+            "role": "user",
+            "name": "Rahul Sharma",
+            "email": "rahul.s@example.com",
+            "dob": "2007-11-10",
+            "age": 16,
+            "phone": "+919876543212",
+            "address": {
+                "street": "789 Junior Rd",
+                "city": "Chicago",
+                "state": "IL",
+                "country": "USA",
+                "zipCode": "60601"
+            },
+            "guardianDetails": {
+                "name": "Robert Brown",
+                "relationship": "Father",
+                "phone": "+1234567895"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-03-10T09:00:00Z"
+        },
+        {
+            "id": 14785236987459,
+            "username": "neha.gupta",
+            "password": "pass123",
+            "role": "user",
+            "name": "Neha Gupta",
+            "email": "neha.g@example.com",
+            "dob": "1994-04-25",
+            "age": 29,
+            "phone": "+919876543213",
+            "occupation": "Software Engineer",
+            "income": 85000,
+            "address": {
+                "street": "101 Pro Circle",
+                "city": "Seattle",
+                "state": "WA",
+                "country": "USA",
+                "zipCode": "98101"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-04-15T14:00:00Z"
+        },
+        {
+            "id": 14785236987460,
+            "username": "vikram.singh",
+            "password": "pass123",
+            "role": "user",
+            "name": "Vikram Singh",
+            "email": "vikram.s@example.com",
+            "dob": "1989-07-15",
+            "age": 34,
+            "phone": "+919876543214",
+            "occupation": "Marketing Manager",
+            "income": 75000,
+            "address": {
+                "street": "202 Work Lane",
+                "city": "Austin",
+                "state": "TX",
+                "country": "USA",
+                "zipCode": "73301"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-05-20T16:00:00Z"
+        },
+        {
+            "id": 14785236987461,
+            "username": "anjali.verma",
+            "password": "pass123",
+            "role": "user",
+            "name": "Anjali Verma",
+            "email": "anjali.v@example.com",
+            "dob": "1992-09-30",
+            "age": 31,
+            "phone": "+919876543215",
+            "occupation": "Doctor",
+            "income": 95000,
+            "address": {
+                "street": "303 Career St",
+                "city": "Denver",
+                "state": "CO",
+                "country": "USA",
+                "zipCode": "80201"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-06-10T13:00:00Z"
+        },
+        {
+            "id": 14785236987462,
+            "username": "rajesh.malhotra",
+            "password": "pass123",
+            "role": "user",
+            "name": "Rajesh Malhotra",
+            "email": "rajesh.m@example.com",
+            "dob": "1988-03-12",
+            "age": 35,
+            "phone": "+919876543216",
+            "occupation": "CEO",
+            "income": 500000,
+            "address": {
+                "street": "404 Wealth Ave",
+                "city": "San Francisco",
+                "state": "CA",
+                "country": "USA",
+                "zipCode": "94101"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-07-05T11:00:00Z",
+            "relationshipManager": "RM001",
+            "segment": "HNI"
+        },
+        {
+            "id": 14785236987463,
+            "username": "deepika.reddy",
+            "password": "pass123",
+            "role": "user",
+            "name": "Deepika Reddy",
+            "email": "deepika.r@example.com",
+            "dob": "1990-11-25",
+            "age": 33,
+            "phone": "+919876543217",
+            "occupation": "Business Owner",
+            "income": 750000,
+            "address": {
+                "street": "505 Fortune Rd",
+                "city": "Miami",
+                "state": "FL",
+                "country": "USA",
+                "zipCode": "33101"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-08-15T15:00:00Z",
+            "relationshipManager": "RM002",
+            "segment": "HNI"
+        },
+        {
+            "id": 14785236987464,
+            "username": "amit.shah",
+            "password": "pass123",
+            "role": "user",
+            "name": "Amit Shah",
+            "email": "amit.s@example.com",
+            "dob": "1991-06-18",
+            "age": 32,
+            "phone": "+919876543218",
+            "occupation": "Investment Banker",
+            "income": 600000,
+            "address": {
+                "street": "606 Elite Blvd",
+                "city": "Los Angeles",
+                "state": "CA",
+                "country": "USA",
+                "zipCode": "90001"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-09-20T12:00:00Z",
+            "relationshipManager": "RM003",
+            "segment": "HNI"
+        },
+        {
+            "id": 14785236987465,
+            "username": "meera.kapoor",
+            "password": "pass123",
+            "role": "user",
+            "name": "Meera Kapoor",
+            "email": "meera.k@example.com",
+            "dob": "1964-02-28",
+            "age": 59,
+            "phone": "+919876543219",
+            "occupation": "Retired Professor",
+            "income": 120000,
+            "address": {
+                "street": "707 Senior Lane",
+                "city": "Portland",
+                "state": "OR",
+                "country": "USA",
+                "zipCode": "97201"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-10-10T10:00:00Z"
+        },
+        {
+            "id": 14785236987466,
+            "username": "sanjay.mehta",
+            "password": "pass123",
+            "role": "user",
+            "name": "Sanjay Mehta",
+            "email": "sanjay.m@example.com",
+            "dob": "1969-08-15",
+            "age": 54,
+            "phone": "+919876543220",
+            "occupation": "Business Consultant",
+            "income": 150000,
+            "address": {
+                "street": "808 Wisdom Rd",
+                "city": "Phoenix",
+                "state": "AZ",
+                "country": "USA",
+                "zipCode": "85001"
+            },
+            "status": "active",
+            "kycStatus": "verified",
+            "createdAt": "2023-11-05T14:00:00Z"
+        }
+    ]
+} 

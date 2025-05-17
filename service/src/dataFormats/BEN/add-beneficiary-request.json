@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "required": ["name", "accountNumber", "ifscCode", "bankName"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of the beneficiary"
+        },
+        "accountNumber": {
+            "type": "string",
+            "description": "Account number of the beneficiary"
+        },
+        "ifscCode": {
+            "type": "string",
+            "pattern": "^[A-Z]{4}0[A-Z0-9]{6}$",
+            "description": "IFSC code of the beneficiary's bank"
+        },
+        "bankName": {
+            "type": "string",
+            "description": "Name of the beneficiary's bank"
+        },
+        "nickname": {
+            "type": "string",
+            "description": "Custom nickname for the beneficiary"
+        },
+        "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Email address of the beneficiary"
+        },
+        "phone": {
+            "type": "string",
+            "description": "Phone number of the beneficiary"
+        },
+        "transferLimit": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Maximum amount that can be transferred to this beneficiary"
+        }
+    }
+} 

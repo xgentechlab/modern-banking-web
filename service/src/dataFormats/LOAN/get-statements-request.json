@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "required": ["startDate", "endDate", "loanType"],
+    "properties": {
+        "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Start date for statement period",
+            "defaultValue": "2024-01-01"
+        },
+        "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "End date for statement period",
+            "defaultValue": "2024-01-31"
+        },
+        "page": {
+            "type": "number",
+            "minimum": 1,
+            "description": "Page number for pagination"
+        },
+        "limit": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 100,
+            "description": "Number of records per page"
+        },
+        "loanId": {
+            "type": "string",
+            "description": "Loan ID"
+        },
+        "loanType": {
+            "type": "string",
+            "enum": ["personal", "business","car","home","education","gold","other"],
+            "description": "Loan Type personal, business, car, home, education, gold, other"
+            
+        },
+        "loanAmount": {
+            "type": "number",
+            "description": "Loan Amount"
+        }
+    }
+} 

@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "required": ["registeredBillerId", "amount", "paymentMode"],
+    "properties": {
+        "registeredBillerId": {
+            "type": "string",
+            "description": "ID of the registered biller"
+        },
+        "amount": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Bill amount to pay"
+        },
+        "convenienceFee": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Convenience fee for the payment"
+        },
+        "paymentMode": {
+            "type": "string",
+            "enum": ["netbanking", "cards", "upi"],
+            "description": "Mode of payment"
+        },
+        "paymentDetails": {
+            "type": "object",
+            "description": "Payment mode specific details"
+        },
+        "billNumber": {
+            "type": "string",
+            "description": "Bill number"
+        },
+        "billDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Bill generation date"
+        },
+        "dueDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Bill due date"
+        }
+    }
+} 

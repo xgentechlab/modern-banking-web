@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "nominees": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Nominee's full name"
+                    },
+                    "relationship": {
+                        "type": "string",
+                        "description": "Relationship with account holder"
+                    }
+                }
+            }
+        },
+        "status": {
+            "type": "string",
+            "enum": ["active", "inactive", "frozen"],
+            "description": "Account status"
+        }
+    }
+} 

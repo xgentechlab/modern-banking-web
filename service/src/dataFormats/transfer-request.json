@@ -1,0 +1,114 @@
+{
+    "immediateTransfer": {
+        "type": "object",
+        "required": ["fromAccountId", "toAccountId", "amount"],
+        "properties": {
+            "fromAccountId": {
+                "type": "string",
+                "description": "Source account ID"
+            },
+            "toAccountId": {
+                "type": "string",
+                "description": "Destination account ID"
+            },
+            "amount": {
+                "type": "number",
+                "minimum": 0.01,
+                "description": "Transfer amount"
+            },
+            "currency": {
+                "type": "string",
+                "default": "USD",
+                "description": "Transfer currency"
+            },
+            "description": {
+                "type": "string",
+                "description": "Transfer description"
+            },
+            "reference": {
+                "type": "string",
+                "description": "Custom reference for the transfer"
+            }
+        }
+    },
+    "scheduleTransfer": {
+        "type": "object",
+        "required": ["fromAccountId", "toAccountId", "amount", "scheduledDate"],
+        "properties": {
+            "fromAccountId": {
+                "type": "string",
+                "description": "Source account ID"
+            },
+            "toAccountId": {
+                "type": "string",
+                "description": "Destination account ID"
+            },
+            "amount": {
+                "type": "number",
+                "minimum": 0.01,
+                "description": "Transfer amount"
+            },
+            "currency": {
+                "type": "string",
+                "default": "USD",
+                "description": "Transfer currency"
+            },
+            "scheduledDate": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Future date for scheduled transfer"
+            },
+            "description": {
+                "type": "string",
+                "description": "Transfer description"
+            },
+            "reference": {
+                "type": "string",
+                "description": "Custom reference for the transfer"
+            }
+        }
+    },
+    "internationalTransfer": {
+        "type": "object",
+        "required": ["fromAccountId", "toAccountId", "amount", "swiftCode", "recipientBank", "recipientCountry"],
+        "properties": {
+            "fromAccountId": {
+                "type": "string",
+                "description": "Source account ID"
+            },
+            "toAccountId": {
+                "type": "string",
+                "description": "Destination account ID"
+            },
+            "amount": {
+                "type": "number",
+                "minimum": 0.01,
+                "description": "Transfer amount"
+            },
+            "currency": {
+                "type": "string",
+                "description": "Transfer currency"
+            },
+            "swiftCode": {
+                "type": "string",
+                "description": "SWIFT/BIC code for international transfer"
+            },
+            "recipientBank": {
+                "type": "string",
+                "description": "Recipient bank name"
+            },
+            "recipientCountry": {
+                "type": "string",
+                "description": "Recipient country"
+            },
+            "description": {
+                "type": "string",
+                "description": "Transfer description"
+            },
+            "reference": {
+                "type": "string",
+                "description": "Custom reference for the transfer"
+            }
+        }
+    }
+} 

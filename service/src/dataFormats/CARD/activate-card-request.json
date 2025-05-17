@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "required": ["activationCode"],
+    "properties": {
+        "activationCode": {
+            "type": "string",
+            "description": "Card activation code"
+        }
+    }
+} 

@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "maxAmount": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Maximum amount for auto-pay"
+        },
+        "paymentMode": {
+            "type": "string",
+            "enum": ["netbanking", "cards"],
+            "description": "Mode of payment for auto-pay"
+        },
+        "paymentDetails": {
+            "type": "object",
+            "description": "Payment mode specific details"
+        }
+    }
+} 

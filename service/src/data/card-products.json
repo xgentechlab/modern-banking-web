@@ -1,0 +1,111 @@
+{
+    "cardProducts": [
+        {
+            "id": "CC001",
+            "type": "credit",
+            "name": "Platinum Credit Card",
+            "description": "Premium credit card with exclusive rewards",
+            "annualFee": 2500,
+            "joiningFee": 1000,
+            "creditLimit": {
+                "min": 50000,
+                "max": 500000
+            },
+            "interestRate": 36,
+            "gracePeriod": 45,
+            "rewards": {
+                "type": "points",
+                "pointsPerSpend": 2,
+                "pointValue": 0.25,
+                "categories": {
+                    "dining": 5,
+                    "travel": 3,
+                    "shopping": 2,
+                    "others": 1
+                }
+            },
+            "benefits": [
+                "Airport Lounge Access",
+                "Concierge Service",
+                "Travel Insurance",
+                "Purchase Protection"
+            ],
+            "eligibility": {
+                "minIncome": 500000,
+                "minAge": 21,
+                "maxAge": 65,
+                "creditScore": 750
+            },
+            "status": "active"
+        },
+        {
+            "id": "CC002",
+            "type": "credit",
+            "name": "Rewards Credit Card",
+            "description": "Everyday rewards credit card",
+            "annualFee": 1000,
+            "joiningFee": 500,
+            "creditLimit": {
+                "min": 25000,
+                "max": 200000
+            },
+            "interestRate": 39,
+            "gracePeriod": 30,
+            "rewards": {
+                "type": "cashback",
+                "categories": {
+                    "groceries": 5,
+                    "fuel": 3,
+                    "utilities": 2,
+                    "others": 1
+                },
+                "maxCashbackPerMonth": 2000
+            },
+            "benefits": [
+                "Extended Warranty",
+                "Purchase Protection",
+                "Zero Liability"
+            ],
+            "eligibility": {
+                "minIncome": 300000,
+                "minAge": 21,
+                "maxAge": 65,
+                "creditScore": 700
+            },
+            "status": "active"
+        },
+        {
+            "id": "DC001",
+            "type": "debit",
+            "name": "Platinum Debit Card",
+            "description": "Premium debit card with enhanced limits",
+            "annualFee": 1000,
+            "joiningFee": 500,
+            "transactionLimits": {
+                "daily": {
+                    "withdrawal": 100000,
+                    "purchase": 200000
+                },
+                "monthly": {
+                    "withdrawal": 1000000,
+                    "purchase": 2000000
+                }
+            },
+            "rewards": {
+                "type": "points",
+                "pointsPerSpend": 1,
+                "pointValue": 0.20,
+                "categories": {
+                    "shopping": 2,
+                    "others": 1
+                }
+            },
+            "benefits": [
+                "Insurance Coverage",
+                "Purchase Protection",
+                "International Acceptance"
+            ],
+            "status": "active"
+        }
+    ]
+} 

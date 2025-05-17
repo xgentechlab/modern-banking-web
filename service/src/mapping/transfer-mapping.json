@@ -1,0 +1,54 @@
+{
+    "moduleCode": "TRF",
+    "moduleName": "Transfers",
+    "submodules": [
+        {
+            "submoduleCode": "TRF_IMMEDIATE",
+            "submoduleName": "Immediate Transfer",
+            "requestFile": "immediate-transfer-request.json",
+            "endpoint": "/api/transfers/immediate"
+        },
+        {
+            "submoduleCode": "TRF_SCHEDULE",
+            "submoduleName": "Schedule Transfer",
+            "requestFile": "schedule-transfer-request.json",
+            "endpoint": "/api/transfers/schedule"
+        },
+        {
+            "submoduleCode": "TRF_STATUS",
+            "submoduleName": "Transfer Status",
+            "requestFile": null,
+            "endpoint": "/api/transfers/:transferId/status"
+        },
+        {
+            "submoduleCode": "TRF_CANCEL",
+            "submoduleName": "Cancel Scheduled Transfer",
+            "requestFile": null,
+            "endpoint": "/api/transfers/scheduled/:transferId"
+        },
+        {
+            "submoduleCode": "TRF_DOMESTIC",
+            "submoduleName": "Domestic Transfer",
+            "requestFile": "immediate-transfer-request.json",
+            "endpoint": "/api/transfers/domestic"
+        },
+        {
+            "submoduleCode": "TRF_INTL",
+            "submoduleName": "International Transfer",
+            "requestFile": "international-transfer-request.json",
+            "endpoint": "/api/transfers/international"
+        },
+        {
+            "submoduleCode": "TRF_HISTORY",
+            "submoduleName": "Transfer History",
+            "requestFile": null,
+            "endpoint": "/api/transfers"
+        },
+        {
+            "submoduleCode": "TRF_LIST",
+            "submoduleName": "Transfer List",
+            "requestFile": null,
+            "endpoint": "/api/transfers"
+        }
+    ]
+} 

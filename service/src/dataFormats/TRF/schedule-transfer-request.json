@@ -1,0 +1,37 @@
+{
+    "type": "object",
+    "required": ["fromAccountId", "toAccountId", "amount", "scheduledDate"],
+    "properties": {
+        "fromAccountId": {
+            "type": "string",
+            "description": "Source account ID"
+        },
+        "toAccountId": {
+            "type": "string",
+            "description": "Destination account ID"
+        },
+        "amount": {
+            "type": "number",
+            "minimum": 0.01,
+            "description": "Transfer amount"
+        },
+        "currency": {
+            "type": "string",
+            "default": "USD",
+            "description": "Transfer currency"
+        },
+        "scheduledDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Future date for scheduled transfer"
+        },
+        "description": {
+            "type": "string",
+            "description": "Transfer description"
+        },
+        "reference": {
+            "type": "string",
+            "description": "Custom reference for the transfer"
+        }
+    }
+} 

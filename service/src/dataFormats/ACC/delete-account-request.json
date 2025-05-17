@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "required": ["confirmationCode"],
+    "properties": {
+        "confirmationCode": {
+            "type": "string",
+            "description": "Confirmation code sent to user's registered email/phone",
+            "pattern": "^[0-9]{6}$"
+        },
+        "reason": {
+            "type": "string",
+            "enum": ["closure", "transfer", "dissatisfied", "other"],
+            "description": "Reason for account deletion"
+        },
+        "remarks": {
+            "type": "string",
+            "maxLength": 500,
+            "description": "Additional remarks for account deletion"
+        }
+    }
+} 

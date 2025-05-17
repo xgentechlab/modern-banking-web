@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "required": ["billerId", "fields"],
+    "properties": {
+        "billerId": {
+            "type": "string",
+            "description": "ID of the biller to register"
+        },
+        "nickname": {
+            "type": "string",
+            "description": "Custom nickname for the biller"
+        },
+        "fields": {
+            "type": "object",
+            "description": "Biller-specific fields (e.g., consumer number, connection ID)"
+        }
+    }
+} 

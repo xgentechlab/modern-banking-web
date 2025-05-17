@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "required": ["points", "rewardOption"],
+    "properties": {
+        "points": {
+            "type": "number",
+            "minimum": 1,
+            "description": "Number of points to redeem"
+        },
+        "rewardOption": {
+            "type": "string",
+            "description": "Selected reward option"
+        }
+    }
+} 

@@ -1,0 +1,43 @@
+{
+    "accountTypes": [
+        {
+            "id": "SAV",
+            "name": "Savings Account",
+            "description": "Basic savings account with interest",
+            "minBalance": 1000,
+            "interestRate": 3.5,
+            "features": [
+                "Online Banking",
+                "Mobile Banking",
+                "ATM Card",
+                "Checkbook"
+            ]
+        },
+        {
+            "id": "CUR",
+            "name": "Current Account",
+            "description": "Regular current account for daily transactions",
+            "minBalance": 500,
+            "interestRate": 0.5,
+            "features": [
+                "Online Banking",
+                "Mobile Banking",
+                "ATM Card",
+                "Checkbook",
+                "Overdraft Protection"
+            ]
+        },
+        {
+            "id": "FD",
+            "name": "Fixed Deposit",
+            "description": "Term deposit with higher interest rates",
+            "minBalance": 10000,
+            "interestRate": 6.5,
+            "features": [
+                "Flexible Tenure",
+                "Auto Renewal Option",
+                "Loan Against FD"
+            ]
+        }
+    ]
+} 

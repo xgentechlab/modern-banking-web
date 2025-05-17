@@ -1,0 +1,60 @@
+{
+    "moduleCode": "ACC",
+    "moduleName": "Accounts",
+    "submodules": [
+        {
+            "submoduleCode": "ACC_LIST",
+            "submoduleName": "List Accounts",
+            "requestFile": "get-all-accounts.json",
+            "endpoint": "/api/accounts"
+        },
+        {
+            "submoduleCode": "ACC_TYPE",
+            "submoduleName": "Account Types",
+            "requestFile": "get-account-types-request.json",
+            "endpoint": "/api/accounts/types"
+        },
+        {
+            "submoduleCode": "ACC_CREATE",
+            "submoduleName": "Create Account",
+            "requestFile": "create-account-request.json",
+            "endpoint": "/api/accounts"
+        },
+        {
+            "submoduleCode": "ACC_UPDATE",
+            "submoduleName": "Update Account",
+            "requestFile": "update-account-request.json",
+            "endpoint": "/api/accounts/:accountId"
+        },
+        {
+            "submoduleCode": "ACC_DELETE",
+            "submoduleName": "Delete Account",
+            "requestFile": "delete-account-request.json",
+            "endpoint": "/api/accounts/:accountId"
+        },
+        {
+            "submoduleCode": "ACC_DETAILS",
+            "submoduleName": "Account Details",
+            "requestFile": "get-account-details-request.json",
+            "endpoint": "/api/accounts/:accountId"
+        },
+        {
+            "submoduleCode": "ACC_BALANCE",
+            "submoduleName": "Account Balance",
+            "requestFile": "get-account-balance-request.json",
+            "endpoint": "/api/accounts/:accountId/balance"
+        },
+        {
+            "submoduleCode": "ACC_MINI_STMT",
+            "submoduleName": "Mini Statement",
+            "requestFile": "get-mini-statement-request.json",
+            "endpoint": "/api/accounts/:accountId/mini-statement"
+        },
+        {
+            "submoduleCode": "ACC_FULL_STMT",
+            "submoduleName": "Full Statement",
+            "requestFile": "get-statement-request.json",
+            "endpoint": "/api/accounts/:accountId/statement"
+        }
+    ]
+} 

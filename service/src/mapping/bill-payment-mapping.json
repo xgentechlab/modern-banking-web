@@ -1,0 +1,60 @@
+{
+    "moduleCode": "BILL",
+    "moduleName": "Bill Payment",
+    "submodules": [
+        {
+            "submoduleCode": "BILL_LIST",
+            "submoduleName": "List Billers",
+            "requestFile": null,
+            "endpoint": "/api/bills/billers"
+        },
+        {
+            "submoduleCode": "BILL_REG",
+            "submoduleName": "Register Biller",
+            "requestFile": "src/dataFormats/bill/register-biller-request.json",
+            "endpoint": "/api/bills/register"
+        },
+        {
+            "submoduleCode": "BILL_UPDATE",
+            "submoduleName": "Update Registered Biller",
+            "requestFile": "src/dataFormats/bill/update-biller-request.json",
+            "endpoint": "/api/bills/registered/:registeredBillerId"
+        },
+        {
+            "submoduleCode": "BILL_DELETE",
+            "submoduleName": "Delete Registered Biller",
+            "requestFile": null,
+            "endpoint": "/api/bills/registered/:registeredBillerId"
+        },
+        {
+            "submoduleCode": "BILL_FETCH",
+            "submoduleName": "Fetch Bill",
+            "requestFile": "src/dataFormats/bill/fetch-bill-request.json",
+            "endpoint": "/api/bills/fetch"
+        },
+        {
+            "submoduleCode": "BILL_PAY",
+            "submoduleName": "Pay Bill",
+            "requestFile": "src/dataFormats/bill/pay-bill-request.json",
+            "endpoint": "/api/bills/pay"
+        },
+        {
+            "submoduleCode": "BILL_HISTORY",
+            "submoduleName": "Payment History",
+            "requestFile": "src/dataFormats/bill/payment-history-request.json",
+            "endpoint": "/api/bills/history"
+        },
+        {
+            "submoduleCode": "BILL_AUTOPAY",
+            "submoduleName": "Setup Auto Pay",
+            "requestFile": "src/dataFormats/bill/setup-autopay-request.json",
+            "endpoint": "/api/bills/autopay"
+        },
+        {
+            "submoduleCode": "BILL_AUTOPAY_UPDATE",
+            "submoduleName": "Update Auto Pay",
+            "requestFile": "src/dataFormats/bill/update-autopay-request.json",
+            "endpoint": "/api/bills/autopay/:registeredBillerId"
+        }
+    ]
+} 

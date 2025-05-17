@@ -1,0 +1,11 @@
+{
+  "14785236987459": {
+    "timestamp": "2025-04-10T18:15:00.713951",
+    "raw_text": "Show my spending trends for 2024",
+    "response": {
+      "type": "text",
+      "content": "Based on the previous information you provided, I'm all set to help you analyze your spending trends for the year 2024. Utilizing our Analytics module and specifically focusing on the Transactions analytics submodule, I'll gather and analyze your transaction data from January 1, 2024, to December 31, 2024. This will give us a clear picture of where your money is going and how you can enhance your financial management.\n\nI'll start the process to generate the spending trends report for 2024. Once the analysis is complete, I'll share the insights with you in an easy-to-understand format. If you have any specific preferences or additional questions about your spending trends or any other financial insights, feel free to let me know!\n\nIf you have any other banking-related queries or need assistance, feel free to ask.",
+      "entities": null
+    }
+  }
+}

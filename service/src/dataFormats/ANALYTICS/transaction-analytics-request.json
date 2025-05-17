@@ -1,0 +1,32 @@
+
+
+{
+    "type": "object",
+    "properties": {
+        "analyticsType": {
+            "type": "string",
+            "enum": ["spending", "income", "budget", "forecast"],
+            "description": "Analytics Type (spending, income, budget, forecast)"
+        },
+        "visualizationType": {
+            "type": "string",
+            "enum": ["pie chart", "bar graph", "line graph"],
+            "description": "Visualization Type"
+        },
+      
+        "categories": {
+            "type": "string",
+            "description": "Categories"
+        },
+        "startDate": {
+            "type": "date",
+            "description": "Start Date, if not provided, 30 days ago from today will be used",
+            "defaultValue": "30 days ago from today"
+        },
+        "endDate": {
+            "type": "date",
+            "description": "End Date, if not provided, today's date will be used",
+            "defaultValue": "Todays date"
+        }
+    }
+}

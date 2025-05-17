@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    
+    "properties": {
+        "accountType": {
+            "type": "string",
+            "enum": ["SAV", "CUR", "FD"],
+            "description": "Account type savings, current, fixed deposit"
+        },
+        "accountNumber": {
+            "type": "string",
+            "description": "Account number"
+        }
+    }
+} 

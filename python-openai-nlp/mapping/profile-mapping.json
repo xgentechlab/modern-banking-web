@@ -1,0 +1,33 @@
+{
+    "moduleCode": "PROF",
+    "moduleName": "Profile",
+    "submodules": [
+        {
+            "submoduleCode": "EDIT_ADDRESS",
+            "submoduleName": "Edit Address",
+            "requestFile": "src/dataFormats/PROF/edit-address-request.json",
+            "endpoint": "/api/profile/address"
+        },
+        {
+            "submoduleCode": "EDIT_MOBILE_NUMBER",
+            "submoduleName": "Edit Mobile Number",
+            "requestFile": "src/dataFormats/PROF/edit-mobile-number-request.json",
+            "endpoint": "/api/profile/mobile-number"
+        },
+        {
+            "submoduleCode": "EDIT_EMAIL",
+            "submoduleName": "Edit Email",
+            "requestFile": "src/dataFormats/PROF/edit-email-request.json",
+            "endpoint": "/api/profile/email"
+        },
+        {
+            "submoduleCode": "EDIT_PROFILE",
+            "submoduleName": "Edit all Profile Details ",
+           "requestFile": null,
+            "endpoint": "/api/profile/all"
+        }
+
+    ]
+}
+
+

@@ -1,0 +1,32 @@
+{
+  "user_id": "14785236987459",
+  "session_id": "7faab464-c4c7-4619-851e-1d9bf8d5975a",
+  "created_at": "2025-05-15T12:55:28.105578",
+  "last_updated": "2025-05-15T12:55:29.259486",
+  "history": [
+    {
+      "timestamp": "2025-05-15T12:55:28.105578",
+      "text": "delete this account",
+      "is_user": true,
+      "response_data": null
+    },
+    {
+      "timestamp": "2025-05-15T12:55:29.259486",
+      "text": "",
+      "is_user": false,
+      "response_data": {
+        "moduleCode": "",
+        "submoduleCode": "",
+        "flow": "QUERY",
+        "entities": {},
+        "raw_text": "delete this account",
+        "error": "Invalid module code: Accounts",
+        "session_id": "7faab464-c4c7-4619-851e-1d9bf8d5975a"
+      }
+    }
+  ],
+  "entities": {},
+  "current_module": null,
+  "current_submodule": null,
+  "current_flow": null
+}

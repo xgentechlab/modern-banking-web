@@ -1,0 +1,84 @@
+{
+    "moduleCode": "CARD",
+    "moduleName": "Cards",
+    "submodules": [
+        {
+            "submoduleCode": "CARD_PRODUCTS",
+            "submoduleName": "Card Products",
+            "requestFile": null,
+            "endpoint": "/api/cards/products"
+        },
+        {
+            "submoduleCode": "CARD_APPLY",
+            "submoduleName": "Apply for Card",
+            "requestFile": "src/dataFormats/card/apply-card-request.json",
+            "endpoint": "/api/cards/apply"
+        },
+        {
+            "submoduleCode": "CARD_LIST",
+            "submoduleName": "List User Cards",
+            "requestFile": null,
+            "endpoint": "/api/cards"
+        },
+        {
+            "submoduleCode": "CARD_DETAILS",
+            "submoduleName": "Card Details",
+            "requestFile": null,
+            "endpoint": "/api/cards/:cardId"
+        },
+        {
+            "submoduleCode": "CARD_ACTIVATE",
+            "submoduleName": "Activate Card",
+            "requestFile": "src/dataFormats/card/activate-card-request.json",
+            "endpoint": "/api/cards/:cardId/activate"
+        },
+        {
+            "submoduleCode": "CARD_BLOCK",
+            "submoduleName": "Block Card",
+            "requestFile": "src/dataFormats/card/block-card-request.json",
+            "endpoint": "/api/cards/:cardId/block"
+        },
+        {
+            "submoduleCode": "CARD_UNBLOCK",
+            "submoduleName": "Unblock Card",
+            "requestFile": null,
+            "endpoint": "/api/cards/:cardId/unblock"
+        },
+        {
+            "submoduleCode": "CARD_SET_PIN",
+            "submoduleName": "Set Card PIN",
+            "requestFile": "src/dataFormats/card/set-pin-request.json",
+            "endpoint": "/api/cards/:cardId/pin"
+        },
+        {
+            "submoduleCode": "CARD_CHANGE_PIN",
+            "submoduleName": "Change Card PIN",
+            "requestFile": "src/dataFormats/card/change-pin-request.json",
+            "endpoint": "/api/cards/:cardId/pin"
+        },
+        {
+            "submoduleCode": "CARD_TRANSACTIONS",
+            "submoduleName": "Card Transactions",
+            "requestFile": "src/dataFormats/card/get-transactions-request.json",
+            "endpoint": "/api/cards/transactions"
+        },
+        {
+            "submoduleCode": "CARD_STATEMENT",
+            "submoduleName": "Card Statement",
+            "requestFile": "src/dataFormats/card/get-transactions-request.json",
+            "endpoint": "/api/cards/:cardId/statement"
+        },
+        {
+            "submoduleCode": "CARD_REWARDS",
+            "submoduleName": "Card Rewards",
+            "requestFile": null,
+            "endpoint": "/api/cards/:cardId/rewards"
+        },
+        {
+            "submoduleCode": "CARD_REDEEM",
+            "submoduleName": "Redeem Rewards",
+            "requestFile": "src/dataFormats/card/redeem-rewards-request.json",
+            "endpoint": "/api/cards/:cardId/rewards/redeem"
+        }
+    ]
+} 

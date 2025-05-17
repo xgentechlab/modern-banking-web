@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "nickname": {
+            "type": "string",
+            "description": "Custom nickname for the biller"
+        },
+        "fields": {
+            "type": "object",
+            "description": "Updated biller-specific fields"
+        }
+    }
+} 

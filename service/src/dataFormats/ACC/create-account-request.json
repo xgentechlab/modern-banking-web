@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "required": ["accountType", "initialDeposit"],
+    "properties": {
+        "accountType": {
+            "type": "string",
+            "enum": ["SAV", "CHK", "FD"],
+            "description": "Type of account to create"
+        },
+        "initialDeposit": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Initial deposit amount"
+        },
+        "currency": {
+            "type": "string",
+            "default": "USD",
+            "description": "Account currency"
+        },
+        "branch": {
+            "type": "string",
+            "description": "Branch code"
+        },
+        "nominees": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Nominee's full name"
+                    },
+                    "relationship": {
+                        "type": "string",
+                        "description": "Relationship with account holder"
+                    }
+                }
+            }
+        }
+    }
+} 

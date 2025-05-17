@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "description": "Request format for getting available account types",
+    "properties": {
+        "status": {
+            "type": "string",
+            "enum": ["active", "inactive", "all"],
+            "description": "Filter account types by status",
+            "default": "active"
+        }
+    }
+} 

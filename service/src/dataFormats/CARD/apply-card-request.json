@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "required": ["productId", "accountId"],
+    "properties": {
+        "productId": {
+            "type": "string",
+            "description": "ID of the card product"
+        },
+        "accountId": {
+            "type": "string",
+            "description": "Account ID for card linking"
+        },
+        "nameOnCard": {
+            "type": "string",
+            "description": "Name to be printed on card"
+        },
+        "billingAddress": {
+            "type": "object",
+            "properties": {
+                "street": {
+                    "type": "string",
+                    "description": "Street address"
+                },
+                "city": {
+                    "type": "string",
+                    "description": "City"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State/Province"
+                },
+                "country": {
+                    "type": "string",
+                    "description": "Country"
+                },
+                "zipCode": {
+                    "type": "string",
+                    "description": "ZIP/Postal code"
+                }
+            }
+        }
+    }
+} 

@@ -1,0 +1,331 @@
+{
+    "accounts": [
+        
+        {
+            "id": "100000000001",
+            "userId": 1,
+            "accountType": "SAV",
+            "accountNumber": "100000000001",
+            "balance": 5000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-01-01T10:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN001"
+        },
+       
+        {
+            "id": "100000000002",
+            "userId": 14785236987456,
+            "accountType": "SAV",
+            "accountNumber": "100000000002",
+            "balance": 500.50,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-01-15T10:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN001",
+            "nominees": [
+                {
+                    "name": "Mary Johnson",
+                    "relationship": "Mother"
+                }
+            ],
+            "minorAccount": true,
+            "guardianId": "GUARD001"
+        },
+        
+        {
+            "id": "100000000003",
+            "userId": 14785236987457,
+            "accountType": "SAV",
+            "accountNumber": "100000000003",
+            "balance": 750.25,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-02-20T11:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN002",
+            "nominees": [
+                {
+                    "name": "James Wilson",
+                    "relationship": "Father"
+                }
+            ],
+            "minorAccount": true,
+            "guardianId": "GUARD002"
+        },
+      
+        {
+            "id": "100000000004",
+            "userId": 14785236987458,
+            "accountType": "SAV",
+            "accountNumber": "100000000004",
+            "balance": 300.75,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-03-10T09:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN003",
+            "nominees": [
+                {
+                    "name": "Robert Brown",
+                    "relationship": "Father"
+                }
+            ],
+            "minorAccount": true,
+            "guardianId": "GUARD003"
+        },
+      
+        {
+            "id": "100000000005",
+            "userId": 14785236987459,
+            "accountType": "SAV",
+            "accountNumber": "100000000005",
+            "balance": 15000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-04-15T14:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN001"
+        },
+        {
+            "id": "100000000006",
+            "userId": 14785236987459,
+            "accountType": "CUR",
+            "accountNumber": "100000000006",
+            "balance": 5000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-04-15T14:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN001"
+        },
+        
+        {
+            "id": "100000000007",
+            "userId": 14785236987460,
+            "accountType": "SAV",
+            "accountNumber": "100000000007",
+            "balance": 25000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-05-20T16:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN002"
+        },
+        {
+            "id": "100000000008",
+            "userId": 14785236987460,
+            "accountType": "CUR",
+            "accountNumber": "100000000008",
+            "balance": 8000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-05-20T16:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN002"
+        },
+        
+        {
+            "id": "100000000009",
+            "userId": 14785236987461,
+            "accountType": "SAV",
+            "accountNumber": "100000000009",
+            "balance": 35000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-06-10T13:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN003"
+        },
+        
+        {
+            "id": "100000000010",
+            "userId": 14785236987462,
+            "accountType": "SAV",
+            "accountNumber": "100000000010",
+            "balance": 500000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-07-05T11:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN001",
+            "accountTier": "PREMIUM"
+        },
+        {
+            "id": "100000000011",
+            "userId": 14785236987462,
+            "accountType": "CUR",
+            "accountNumber": "100000000011",
+            "balance": 250000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-07-05T11:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN001",
+            "accountTier": "PREMIUM"
+        },
+        {
+            "id": "100000000012",
+            "userId": 14785236987462,
+            "accountType": "FD",
+            "accountNumber": "100000000012",
+            "balance": 1000000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-07-05T11:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN001",
+            "accountTier": "PREMIUM",
+            "maturityDate": "2024-07-05T11:00:00Z",
+            "interestRate": 4.75
+        },
+       
+        {
+            "id": "100000000013",
+            "userId": 14785236987463,
+            "accountType": "SAV",
+            "accountNumber": "100000000013",
+            "balance": 750000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-08-15T15:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN002",
+            "accountTier": "PREMIUM"
+        },
+        {
+            "id": "100000000014",
+            "userId": 14785236987463,
+            "accountType": "CUR",
+            "accountNumber": "100000000014",
+            "balance": 300000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-08-15T15:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN002",
+            "accountTier": "PREMIUM"
+        },
+        
+        {
+            "id": "100000000015",
+            "userId": 14785236987464,
+            "accountType": "SAV",
+            "accountNumber": "100000000015",
+            "balance": 600000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-09-20T12:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN003",
+            "accountTier": "PREMIUM"
+        },
+        {
+            "id": "100000000016",
+            "userId": 14785236987464,
+            "accountType": "FD",
+            "accountNumber": "100000000016",
+            "balance": 400000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-09-20T12:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN003",
+            "accountTier": "PREMIUM",
+            "maturityDate": "2024-09-20T12:00:00Z",
+            "interestRate": 4.75
+        },
+        
+        {
+            "id": "100000000017",
+            "userId": 14785236987465,
+            "accountType": "SAV",
+            "accountNumber": "100000000017",
+            "balance": 200000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-10-10T10:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN001"
+        },
+        {
+            "id": "100000000018",
+            "userId": 14785236987465,
+            "accountType": "FD",
+            "accountNumber": "100000000018",
+            "balance": 100000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-10-10T10:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN001",
+            "maturityDate": "2024-10-10T10:00:00Z",
+            "interestRate": 5.0
+        },
+        
+        {
+            "id": "100000000019",
+            "userId": 14785236987466,
+            "accountType": "SAV",
+            "accountNumber": "100000000019",
+            "balance": 175000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-11-05T14:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN002"
+        },
+        {
+            "id": "100000000020",
+            "userId": 14785236987466,
+            "accountType": "FD",
+            "accountNumber": "100000000020",
+            "balance": 100000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-11-05T14:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN002",
+            "maturityDate": "2024-11-05T14:00:00Z",
+            "interestRate": 4.5
+        },
+        {
+            "id": "100000000021",
+            "userId": 14785236987461,
+            "accountType": "CUR",
+            "accountNumber": "100000000021",
+            "balance": 15000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-06-10T13:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN003"
+        },
+        {
+            "id": "100000000022",
+            "userId": 14785236987465,
+            "accountType": "CUR",
+            "accountNumber": "100000000022",
+            "balance": 25000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-10-10T10:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN001"
+        },
+        {
+            "id": "100000000023",
+            "userId": 14785236987466,
+            "accountType": "CUR",
+            "accountNumber": "100000000023",
+            "balance": 30000.00,
+            "currency": "INR",
+            "status": "active",
+            "openedDate": "2023-11-05T14:00:00Z",
+            "lastUpdated": "2024-01-16T15:30:00Z",
+            "branch": "MAIN002"
+        }
+    ]
+} 

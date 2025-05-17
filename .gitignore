@@ -1,0 +1,12 @@
+service/node_modules
+service/.vscode
+service/.env
+
+modern-banking-web/node_modules
+modern-banking-web/.vscode
+modern-banking-web/.env
+
+
+python-openai-nlp/.vscode
+python-openai-nlp/.env
+python-openai-nlp/__pycache__

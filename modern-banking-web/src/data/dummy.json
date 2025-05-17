@@ -1,0 +1,533 @@
+{
+  "accounts": [
+    {
+      "id": "ACC011",
+      "type": "Savings Account",
+      "number": "**** 1234",
+      "balance": 25000.50,
+      "currency": "USD",
+      "lastUpdated": "2024-02-20T10:30:00Z"
+    },
+    {
+      "id": "ACC015",
+      "type": "Checking Account",
+      "number": "**** 5678",
+      "balance": 8500.75,
+      "currency": "USD",
+      "lastUpdated": "2024-02-20T10:30:00Z"
+    }
+  ],
+  "loans": [
+    {
+      "id": "LOAN001",
+      "type": "Home",
+      "loanAmount": 250000.00,
+      "outstandingBalance": 225000.50,
+      "emiAmount": 2150.75,
+      "nextEmiDate": "2024-03-15T00:00:00Z",
+      "interestRate": 6.5,
+      "tenure": 240,
+      "disbursementDate": "2023-01-15T00:00:00Z",
+      "status": "ACTIVE"
+    },
+     {
+      "id": "LOAN002",
+      "type": "Personal",
+      "loanAmount": 50000.00,
+      "outstandingBalance": 42500.25,
+      "emiAmount": 1250.50,
+      "nextEmiDate": "2024-03-20T00:00:00Z",
+      "interestRate": 12.5,
+      "tenure": 48,
+      "disbursementDate": "2023-06-01T00:00:00Z",
+      "status": "ACTIVE"
+    }
+  ],
+  "emiSchedules": {
+    "LOAN001": [
+      {
+        "emiNumber": 15,
+        "dueDate": "2024-03-15T00:00:00Z",
+        "amount": 2150.75,
+        "principal": 1500.50,
+        "interest": 650.25,
+        "status": "PENDING"
+      },
+      {
+        "emiNumber": 14,
+        "dueDate": "2024-02-15T00:00:00Z",
+        "amount": 2150.75,
+        "principal": 1485.50,
+        "interest": 665.25,
+        "status": "PAID"
+      },
+      {
+        "emiNumber": 13,
+        "dueDate": "2024-01-15T00:00:00Z",
+        "amount": 2150.75,
+        "principal": 1470.50,
+        "interest": 680.25,
+        "status": "PAID"
+      }
+    ],
+    "LOAN002": [
+      {
+        "emiNumber": 10,
+        "dueDate": "2024-03-20T00:00:00Z",
+        "amount": 1250.50,
+        "principal": 950.25,
+        "interest": 300.25,
+        "status": "PENDING"
+      },
+      {
+        "emiNumber": 9,
+        "dueDate": "2024-02-20T00:00:00Z",
+        "amount": 1250.50,
+        "principal": 940.25,
+        "interest": 310.25,
+        "status": "PAID"
+      }
+    ]
+  },
+  "statements": {
+    "ACC011": {
+      "15": {
+        "startDate": "2024-02-05T00:00:00Z",
+        "endDate": "2024-02-20T00:00:00Z",
+        "openingBalance": 20000.00,
+        "closingBalance": 25000.50,
+        "totalCredits": 5012.75,
+        "totalDebits": -290.49,
+        "transactionCount": 5
+      },
+      "30": {
+        "startDate": "2024-01-21T00:00:00Z",
+        "endDate": "2024-02-20T00:00:00Z",
+        "openingBalance": 18500.00,
+        "closingBalance": 25000.50,
+        "totalCredits": 7500.75,
+        "totalDebits": -1000.25,
+        "transactionCount": 12
+      },
+      "60": {
+        "startDate": "2023-12-22T00:00:00Z",
+        "endDate": "2024-02-20T00:00:00Z",
+        "openingBalance": 15000.00,
+        "closingBalance": 25000.50,
+        "totalCredits": 12500.75,
+        "totalDebits": -2500.25,
+        "transactionCount": 25
+      },
+      "90": {
+        "startDate": "2023-11-22T00:00:00Z",
+        "endDate": "2024-02-20T00:00:00Z",
+        "openingBalance": 12000.00,
+        "closingBalance": 25000.50,
+        "totalCredits": 18500.75,
+        "totalDebits": -5500.25,
+        "transactionCount": 45
+      }
+    },
+    "ACC015": {
+      "15": {
+        "startDate": "2024-02-05T00:00:00Z",
+        "endDate": "2024-02-20T00:00:00Z",
+        "openingBalance": 7000.00,
+        "closingBalance": 8500.75,
+        "totalCredits": 2500.00,
+        "totalDebits": -999.25,
+        "transactionCount": 5
+      },
+      "30": {
+        "startDate": "2024-01-21T00:00:00Z",
+        "endDate": "2024-02-20T00:00:00Z",
+        "openingBalance": 6500.00,
+        "closingBalance": 8500.75,
+        "totalCredits": 5000.00,
+        "totalDebits": -2999.25,
+        "transactionCount": 15
+      },
+      "60": {
+        "startDate": "2023-12-22T00:00:00Z",
+        "endDate": "2024-02-20T00:00:00Z",
+        "openingBalance": 5000.00,
+        "closingBalance": 8500.75,
+        "totalCredits": 8500.00,
+        "totalDebits": -4999.25,
+        "transactionCount": 28
+      },
+      "90": {
+        "startDate": "2023-11-22T00:00:00Z",
+        "endDate": "2024-02-20T00:00:00Z",
+        "openingBalance": 3500.00,
+        "closingBalance": 8500.75,
+        "totalCredits": 12500.00,
+        "totalDebits": -7499.25,
+        "transactionCount": 52
+      }
+    },
+    "LOAN001": {
+      "3M": {
+        "startDate": "2023-12-15T00:00:00Z",
+        "endDate": "2024-03-15T00:00:00Z",
+        "openingBalance": 230500.75,
+        "closingBalance": 225000.50,
+        "totalPrincipalPaid": 4500.25,
+        "totalInterestPaid": 1950.50,
+        "totalEmisPaid": 3
+      },
+      "6M": {
+        "startDate": "2023-09-15T00:00:00Z",
+        "endDate": "2024-03-15T00:00:00Z",
+        "openingBalance": 235750.25,
+        "closingBalance": 225000.50,
+        "totalPrincipalPaid": 8750.75,
+        "totalInterestPaid": 4050.75,
+        "totalEmisPaid": 6
+      },
+      "1Y": {
+        "startDate": "2023-03-15T00:00:00Z",
+        "endDate": "2024-03-15T00:00:00Z",
+        "openingBalance": 242500.50,
+        "closingBalance": 225000.50,
+        "totalPrincipalPaid": 17500.00,
+        "totalInterestPaid": 8250.50,
+        "totalEmisPaid": 12
+      }
+    },
+    "LOAN002": {
+      "3M": {
+        "startDate": "2023-12-20T00:00:00Z",
+        "endDate": "2024-03-20T00:00:00Z",
+        "openingBalance": 45000.75,
+        "closingBalance": 42500.25,
+        "totalPrincipalPaid": 2500.50,
+        "totalInterestPaid": 1250.25,
+        "totalEmisPaid": 3
+      },
+      "6M": {
+        "startDate": "2023-09-20T00:00:00Z",
+        "endDate": "2024-03-20T00:00:00Z",
+        "openingBalance": 47500.25,
+        "closingBalance": 42500.25,
+        "totalPrincipalPaid": 5000.00,
+        "totalInterestPaid": 2500.50,
+        "totalEmisPaid": 6
+      }
+    }
+  },
+  "transactions": {
+    "ACC011": [
+      {
+        "id": "txn_001",
+        "date": "2024-02-20T09:30:00Z",
+        "description": "Salary Deposit",
+        "amount": 5000.00,
+        "type": "credit",
+        "category": "Income",
+        "fromAccount": "COMPANY INC",
+        "toAccount": "**** 1234"
+      },
+      {
+        "id": "txn_002",
+        "date": "2024-02-19T15:45:00Z",
+        "description": "Amazon.com Purchase",
+        "amount": -129.99,
+        "type": "debit",
+        "category": "Shopping",
+        "fromAccount": "**** 1234",
+        "toAccount": "AMAZON"
+      },
+      {
+        "id": "txn_003",
+        "date": "2024-02-18T12:20:00Z",
+        "description": "Grocery Store",
+        "amount": -75.50,
+        "type": "debit",
+        "category": "Groceries",
+        "fromAccount": "**** 1234",
+        "toAccount": "WHOLE FOODS"
+      },
+      {
+        "id": "txn_004",
+        "date": "2024-02-17T08:15:00Z",
+        "description": "Interest Credit",
+        "amount": 12.75,
+        "type": "credit",
+        "category": "Interest",
+        "fromAccount": "BANK",
+        "toAccount": "**** 1234"
+      },
+      {
+        "id": "txn_005",
+        "date": "2024-02-16T19:30:00Z",
+        "description": "Restaurant Payment",
+        "amount": -85.00,
+        "type": "debit",
+        "category": "Dining",
+        "fromAccount": "**** 1234",
+        "toAccount": "OLIVE GARDEN"
+      }
+    ],
+    "ACC015": [
+      {
+        "id": "txn_006",
+        "date": "2024-02-20T14:20:00Z",
+        "description": "ATM Withdrawal",
+        "amount": -200.00,
+        "type": "debit",
+        "category": "Withdrawal",
+        "fromAccount": "**** 5678",
+        "toAccount": "ATM"
+      },
+      {
+        "id": "txn_007",
+        "date": "2024-02-19T11:30:00Z",
+        "description": "Mobile Transfer",
+        "amount": -500.00,
+        "type": "debit",
+        "category": "Transfer",
+        "fromAccount": "**** 5678",
+        "toAccount": "**** 1234"
+      },
+      {
+        "id": "txn_008",
+        "date": "2024-02-18T16:45:00Z",
+        "description": "Utility Bill Payment",
+        "amount": -150.00,
+        "type": "debit",
+        "category": "Bills",
+        "fromAccount": "**** 5678",
+        "toAccount": "POWER CO"
+      },
+      {
+        "id": "txn_009",
+        "date": "2024-02-17T09:15:00Z",
+        "description": "Direct Deposit",
+        "amount": 2500.00,
+        "type": "credit",
+        "category": "Income",
+        "fromAccount": "EMPLOYER",
+        "toAccount": "**** 5678"
+      },
+      {
+        "id": "txn_010",
+        "date": "2024-02-16T13:20:00Z",
+        "description": "Online Shopping",
+        "amount": -89.99,
+        "type": "debit",
+        "category": "Shopping",
+        "fromAccount": "**** 5678",
+        "toAccount": "BEST BUY"
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "CARD001",
+      "type": "Credit",
+      "number": "**** **** **** 4321",
+      "expiryDate": "12/25",
+      "status": "ACTIVE",
+      "dailyLimit": 5000.00,
+      "monthlyLimit": 25000.00,
+      "currentMonthSpending": 12500.50,
+      "rewardPoints": 2500,
+      "rewardHistory": [
+        {
+          "id": "RWD001",
+          "date": "2024-02-15T10:30:00Z",
+          "description": "Online Purchase Reward",
+          "points": 100,
+          "type": "EARNED"
+        },
+        {
+          "id": "RWD002",
+          "date": "2024-02-10T15:45:00Z",
+          "description": "Points Redeemed - Amazon Voucher",
+          "points": -500,
+          "type": "REDEEMED"
+        }
+      ],
+      "statements": {
+        "202402": {
+          "period": "February 2024",
+          "startDate": "2024-02-01T00:00:00Z",
+          "endDate": "2024-02-29T23:59:59Z",
+          "openingBalance": 15000.25,
+          "closingBalance": 12500.50,
+          "totalSpent": 8500.75,
+          "totalPayments": 11000.50,
+          "dueDate": "2024-03-15T00:00:00Z",
+          "minPayment": 625.03,
+          "transactions": [
+            {
+              "id": "TXN001",
+              "date": "2024-02-20T14:30:00Z",
+              "description": "Amazon.com",
+              "amount": 299.99,
+              "type": "PURCHASE",
+              "status": "COMPLETED"
+            }
+          ]
+        },
+        "202401": {
+          "period": "January 2024",
+          "startDate": "2024-01-01T00:00:00Z",
+          "endDate": "2024-01-31T23:59:59Z",
+          "openingBalance": 18500.75,
+          "closingBalance": 15000.25,
+          "totalSpent": 7500.50,
+          "totalPayments": 11000.00,
+          "dueDate": "2024-02-15T00:00:00Z",
+          "minPayment": 750.01,
+          "transactions": []
+        }
+      }
+    },
+    {
+      "id": "CARD002",
+      "type": "Debit",
+      "number": "**** **** **** 5432",
+      "expiryDate": "12/25",
+      "status": "ACTIVE",
+      "dailyLimit": 5000.00,
+      "monthlyLimit": 25000.00,
+      "currentMonthSpending": 12500.50,
+      "rewardPoints": 2500,
+      "rewardHistory": [],
+      "statements": {}
+    }
+  ],
+ 
+  "rewardCatalog": [
+    {
+      "id": "reward_001",
+      "name": "Cash Back Reward",
+      "description": "Get $50 cash back credited to your account",
+      "pointsRequired": 5000,
+      "category": "CASHBACK"
+    },
+    {
+      "id": "reward_002",
+      "name": "Amazon Gift Card",
+      "description": "$100 Amazon Gift Card",
+      "pointsRequired": 8000,
+      "category": "GIFT_CARD"
+    },
+    {
+      "id": "reward_003",
+      "name": "Travel Miles",
+      "description": "10,000 airline miles for your next trip",
+      "pointsRequired": 12000,
+      "category": "TRAVEL"
+    },
+    {
+      "id": "reward_004",
+      "name": "Premium Subscription",
+      "description": "3 months of premium streaming service",
+      "pointsRequired": 6000,
+      "category": "SUBSCRIPTION"
+    }
+  ],
+  "profiles": {
+    "USR001": {
+      "id": "USR001",
+      "personalInfo": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "dateOfBirth": "1985-06-15",
+        "gender": "Male"
+      },
+      "contactInfo": {
+        "email": "john.doe@example.com",
+        "mobile": "+1234567890",
+        "address": {
+          "street": "123 Main St",
+          "city": "Springfield",
+          "state": "IL",
+          "zipCode": "62701",
+          "country": "USA"
+        }
+      },
+      "preferences": {
+        "paperlessStatements": true,
+        "marketingCommunications": false,
+        "twoFactorAuth": true
+      }
+    }
+  },
+  "serviceRequests": {
+    "complaints": [
+      {
+        "id": "COMP001",
+        "type": "TRANSACTION_DISPUTE",
+        "status": "OPEN",
+        "subject": "Unauthorized Transaction",
+        "description": "I don't recognize this transaction from ABC Store",
+        "createdDate": "2024-02-15T10:30:00Z",
+        "lastUpdated": "2024-02-16T14:20:00Z",
+        "priority": "HIGH",
+        "attachments": [
+          {
+            "name": "transaction_screenshot.png",
+            "url": "https://example.com/files/transaction_screenshot.png"
+          }
+        ],
+        "updates": [
+          {
+            "date": "2024-02-16T14:20:00Z",
+            "status": "UNDER_REVIEW",
+            "comment": "Investigation initiated with merchant"
+          }
+        ]
+      }
+    ],
+    "standingInstructions": [
+      {
+        "id": "SI001",
+        "type": "RECURRING_PAYMENT",
+        "payee": "Netflix",
+        "amount": 14.99,
+        "frequency": "MONTHLY",
+        "nextDueDate": "2024-03-15T00:00:00Z",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "bills": {
+    "upcoming": [
+      {
+        "id": "BILL001",
+        "type": "ELECTRICITY",
+        "provider": "Power Corp",
+        "amount": 150.25,
+        "dueDate": "2024-03-15T00:00:00Z",
+        "status": "UNPAID",
+        "billNumber": "ELEC123456"
+      },
+      {
+        "id": "BILL002",
+        "type": "INTERNET",
+        "provider": "ISP Services",
+        "amount": 89.99,
+        "dueDate": "2024-03-20T00:00:00Z",
+        "status": "UNPAID",
+        "billNumber": "NET789012"
+      }
+    ],
+    "history": [
+      {
+        "id": "BILL003",
+        "type": "WATER",
+        "provider": "City Water",
+        "amount": 75.50,
+        "dueDate": "2024-02-15T00:00:00Z",
+        "paidDate": "2024-02-14T10:30:00Z",
+        "status": "PAID",
+        "billNumber": "WAT345678",
+        "transactionId": "TXN789012"
+      }
+    ]
+  }
+} 

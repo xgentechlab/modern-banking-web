@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "required":["accountNumber"],
+    "properties": {
+        "accountNumber": {
+            "type": "string",
+            "description": "Account number"
+        },
+        "includeHold": {
+            "type": "boolean",
+            "description": "Include amount on hold in response",
+            "default": true
+        },
+        "includePendingTransactions": {
+            "type": "boolean",
+            "description": "Include pending transactions in balance calculation",
+            "default": false
+        },
+        "includeOverdraftLimit": {
+            "type": "boolean",
+            "description": "Include available overdraft limit",
+            "default": true
+        },
+        "currency": {
+            "type": "string",
+            "description": "Currency for balance conversion (if different from account currency)",
+            "pattern": "^[A-Z]{3}$"
+        },
+        "accountType": {
+            "type": "string",
+            "description": "Target Account type (Savings, Current, Fixed Deposit)",
+            "enum": ["SAV", "CUR", "FD"]
+        }
+    
+    }
+} 

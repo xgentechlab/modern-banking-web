@@ -1,0 +1,343 @@
+{
+    "customers": [
+        {
+            "userId": 23728398293002,
+            "contactInfo": {
+                "email": "michael.white@example.com",
+                "phone": {
+                    "primary": "+1-555-0123",
+                    "secondary": "+1-555-0124"
+                },
+                "address": {
+                    "current": {
+                        "street": "606 Elite Blvd",
+                        "city": "Los Angeles",
+                        "state": "CA",
+                        "country": "USA",
+                        "zipCode": "90001",
+                        "addressType": "residential",
+                        "verificationStatus": "verified",
+                        "verifiedDate": "2023-12-01T10:00:00Z"
+                    },
+                    "permanent": {
+                        "street": "606 Elite Blvd",
+                        "city": "Los Angeles",
+                        "state": "CA",
+                        "country": "USA",
+                        "zipCode": "90001",
+                        "addressType": "residential",
+                        "verificationStatus": "verified",
+                        "verifiedDate": "2023-12-01T10:00:00Z"
+                    }
+                }
+            },
+            "demographicInfo": {
+                "firstName": "Michael",
+                "lastName": "White",
+                "dateOfBirth": "1980-05-15",
+                "gender": "male",
+                "nationality": "USA",
+                "maritalStatus": "married",
+                "occupation": "Business Owner",
+                "employmentType": "self-employed",
+                "annualIncome": 500000,
+                "educationLevel": "masters"
+            },
+            "kycInfo": {
+                "kycStatus": "verified",
+                "kycLevel": "full",
+                "verifiedDate": "2023-12-01T10:00:00Z",
+                "documents": {
+                    "aadhaar": {
+                        "number": "XXXX-XXXX-1234",
+                        "verificationStatus": "verified",
+                        "verifiedDate": "2023-12-01T10:00:00Z"
+                    },
+                    "pan": {
+                        "number": "XXXXX1234X",
+                        "verificationStatus": "verified",
+                        "verifiedDate": "2023-12-01T10:00:00Z"
+                    },
+                    "passport": {
+                        "number": "X1234567",
+                        "expiryDate": "2028-12-01",
+                        "verificationStatus": "verified",
+                        "verifiedDate": "2023-12-01T10:00:00Z"
+                    }
+                }
+            },
+            "accounts": [
+                {
+                    "id": "ACC011",
+                    "type": "savings",
+                    "status": "active",
+                    "balance": 600000.00,
+                    "currency": "USD",
+                    "openedDate": "2023-01-15T10:00:00Z",
+                    "tier": "PREMIUM",
+                    "nominees": [
+                        {
+                            "name": "Sarah White",
+                            "relationship": "spouse",
+                            "share": 100
+                        }
+                    ],
+                    "facilities": ["checkbook", "netBanking", "mobileBanking"],
+                    "interestRate": 3.5,
+                    "lastInterestPaid": "2024-01-01T00:00:00Z"
+                },
+                {
+                    "id": "ACC015",
+                    "type": "current",
+                    "status": "active",
+                    "balance": 250000.00,
+                    "currency": "USD",
+                    "openedDate": "2023-02-20T10:00:00Z",
+                    "tier": "BUSINESS",
+                    "nominees": [
+                        {
+                            "name": "Sarah White",
+                            "relationship": "spouse",
+                            "share": 100
+                        }
+                    ],
+                    "facilities": ["checkbook", "netBanking", "mobileBanking", "overdraft"],
+                    "overdraftLimit": 100000.00,
+                    "businessType": "sole_proprietorship"
+                },
+                {
+                    "id": "ACC016",
+                    "type": "fixed_deposit",
+                    "status": "active",
+                    "principal": 100000.00,
+                    "currency": "USD",
+                    "openedDate": "2023-06-01T10:00:00Z",
+                    "maturityDate": "2024-06-01T10:00:00Z",
+                    "interestRate": 5.5,
+                    "maturityAmount": 105500.00,
+                    "autoRenewal": true,
+                    "nominees": [
+                        {
+                            "name": "Sarah White",
+                            "relationship": "spouse",
+                            "share": 100
+                        }
+                    ]
+                },
+                {
+                    "id": "ACC017",
+                    "type": "recurring_deposit",
+                    "status": "active",
+                    "monthlyDeposit": 5000.00,
+                    "currency": "USD",
+                    "openedDate": "2023-07-01T10:00:00Z",
+                    "maturityDate": "2025-07-01T10:00:00Z",
+                    "interestRate": 6.0,
+                    "totalDeposited": 40000.00,
+                    "currentValue": 41200.00,
+                    "nominees": [
+                        {
+                            "name": "Sarah White",
+                            "relationship": "spouse",
+                            "share": 100
+                        }
+                    ]
+                }
+            ],
+            "cards": [
+                {
+                    "id": "CARD005",
+                    "type": "credit",
+                    "variant": "platinum",
+                    "status": "active",
+                    "productId": "CC002",
+                    "cardNumber": "XXXX-XXXX-XXXX-1234",
+                    "expiryDate": "12/25",
+                    "creditLimit": 250000.00,
+                    "availableLimit": 200000.00,
+                    "outstandingAmount": 50000.00,
+                    "lastBilledAmount": 45000.00,
+                    "lastPaymentDate": "2024-01-10T10:00:00Z",
+                    "rewards": {
+                        "pointsEarned": 25000,
+                        "pointsRedeemed": 10000,
+                        "availablePoints": 15000
+                    },
+                    "linkedAccount": "ACC011",
+                    "billCycle": 15,
+                    "autoPayEnabled": true,
+                    "internationalEnabled": true
+                },
+                {
+                    "id": "CARD008",
+                    "type": "credit",
+                    "variant": "business",
+                    "status": "active",
+                    "productId": "CC003",
+                    "cardNumber": "XXXX-XXXX-XXXX-5678",
+                    "expiryDate": "03/26",
+                    "creditLimit": 500000.00,
+                    "availableLimit": 450000.00,
+                    "outstandingAmount": 50000.00,
+                    "lastBilledAmount": 48000.00,
+                    "lastPaymentDate": "2024-01-12T10:00:00Z",
+                    "rewards": {
+                        "pointsEarned": 50000,
+                        "pointsRedeemed": 20000,
+                        "availablePoints": 30000
+                    },
+                    "linkedAccount": "ACC015",
+                    "billCycle": 5,
+                    "autoPayEnabled": true,
+                    "internationalEnabled": true,
+                    "corporateFeatures": {
+                        "employeeCards": 2,
+                        "expenseManagement": true,
+                        "corporateLiability": true
+                    }
+                },
+                {
+                    "id": "CARD009",
+                    "type": "debit",
+                    "variant": "platinum",
+                    "status": "active",
+                    "productId": "DC001",
+                    "cardNumber": "XXXX-XXXX-XXXX-9012",
+                    "expiryDate": "06/26",
+                    "linkedAccount": "ACC011",
+                    "limits": {
+                        "dailyAtm": 10000.00,
+                        "dailyPurchase": 50000.00,
+                        "dailyOnline": 25000.00
+                    },
+                    "rewards": {
+                        "pointsEarned": 5000,
+                        "pointsRedeemed": 2000,
+                        "availablePoints": 3000
+                    },
+                    "internationalEnabled": true,
+                    "contactlessEnabled": true,
+                    "ecomEnabled": true
+                },
+                {
+                    "id": "CARD010",
+                    "type": "debit",
+                    "variant": "business",
+                    "status": "active",
+                    "productId": "DC002",
+                    "cardNumber": "XXXX-XXXX-XXXX-3456",
+                    "expiryDate": "09/26",
+                    "linkedAccount": "ACC015",
+                    "limits": {
+                        "dailyAtm": 25000.00,
+                        "dailyPurchase": 100000.00,
+                        "dailyOnline": 75000.00
+                    },
+                    "rewards": {
+                        "pointsEarned": 8000,
+                        "pointsRedeemed": 3000,
+                        "availablePoints": 5000
+                    },
+                    "internationalEnabled": true,
+                    "contactlessEnabled": true,
+                    "ecomEnabled": true,
+                    "businessFeatures": {
+                        "merchantServices": true,
+                        "bulkTransactions": true
+                    }
+                }
+            ],
+            "loans": [
+                {
+                    "id": "LOAN002",
+                    "type": "personal",
+                    "status": "active",
+                    "amount": 100000.00,
+                    "outstandingAmount": 75000.00,
+                    "tenure": 36,
+                    "remainingTenure": 27,
+                    "interestRate": 12.5,
+                    "emi": 3500.00,
+                    "nextEmiDate": "2024-02-05T00:00:00Z"
+                }
+            ],
+            "investments": [
+                {
+                    "id": "INV001",
+                    "type": "mutualFund",
+                    "schemeCode": "MF001",
+                    "investedAmount": 50000.00,
+                    "currentValue": 55000.00,
+                    "units": 500,
+                    "purchaseDate": "2023-06-15T10:00:00Z"
+                }
+            ],
+            "billPayments": {
+                "registeredBillers": [
+                    {
+                        "id": "RB002",
+                        "billerId": "BIL001",
+                        "nickname": "Home Electricity",
+                        "status": "active",
+                        "autoPayEnabled": true,
+                        "lastPaidAmount": 150.00,
+                        "lastPaidDate": "2024-01-10T10:00:00Z"
+                    }
+                ]
+            },
+            "beneficiaries": [
+                {
+                    "id": "BEN003",
+                    "name": "John Smith",
+                    "accountNumber": "1234567890",
+                    "bankName": "Chase Bank",
+                    "status": "active",
+                    "transferLimit": 10000.00,
+                    "lastTransferDate": "2024-01-05T10:00:00Z"
+                },
+                {
+                    "id": "BEN004",
+                    "name": "Jane Doe",
+                    "accountNumber": "1234567890",
+                    "bankName": "Chase Bank",
+                    "status": "active",
+                    "transferLimit": 10000.00,
+                    "lastTransferDate": "2024-01-05T10:00:00Z"
+                }
+
+            ],
+            "preferences": {
+                "communicationChannel": "email",
+                "language": "english",
+                "marketingConsent": true,
+                "twoFactorAuth": true,
+                "notificationPreferences": {
+                    "transactionAlerts": true,
+                    "promotionalAlerts": false,
+                    "billPaymentReminders": true,
+                    "lowBalanceAlerts": true
+                }
+            },
+            "riskProfile": {
+                "creditScore": 780,
+                "riskCategory": "low",
+                "lastUpdated": "2024-01-01T10:00:00Z",
+                "fraudChecks": {
+                    "status": "clear",
+                    "lastChecked": "2024-01-01T10:00:00Z"
+                }
+            },
+            "relationshipInfo": {
+                "customerSince": "2023-01-15T10:00:00Z",
+                "segment": "premium",
+                "relationshipManager": {
+                    "id": "RM001",
+                    "name": "Robert Johnson",
+                    "email": "robert.johnson@bank.com",
+                    "phone": "+1-555-0125"
+                },
+                "totalRelationshipValue": 1025000.00
+            }
+        }
+    ]
+} 

@@ -1,0 +1,36 @@
+{
+  "user_id": "14785236987459",
+  "session_id": "8c96062c-0317-4858-ad6f-a999bb806a1c",
+  "created_at": "2025-05-15T12:55:06.020702",
+  "last_updated": "2025-05-15T12:55:08.016091",
+  "history": [
+    {
+      "timestamp": "2025-05-15T12:55:06.020702",
+      "text": "show all active accounts",
+      "is_user": true,
+      "response_data": null
+    },
+    {
+      "timestamp": "2025-05-15T12:55:08.016091",
+      "text": "",
+      "is_user": false,
+      "response_data": {
+        "moduleCode": "ACC",
+        "submoduleCode": "ACC_LIST",
+        "flow": "QUERY",
+        "entities": {
+          "accountStatus": "active"
+        },
+        "raw_text": "show all active accounts",
+        "error": null,
+        "session_id": "8c96062c-0317-4858-ad6f-a999bb806a1c"
+      }
+    }
+  ],
+  "entities": {
+    "accountStatus": "active"
+  },
+  "current_module": "ACC",
+  "current_submodule": "ACC_LIST",
+  "current_flow": "QUERY"
+}

@@ -1,0 +1,116 @@
+{
+    "type": "object",
+    "required": ["success", "accountId", "transactions"],
+    "properties": {
+        "success": {
+            "type": "boolean",
+            "description": "Indicates if the operation was successful"
+        },
+        "accountId": {
+            "type": "string",
+            "description": "Account identifier"
+        },
+        "transactions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Transaction ID"
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "Transaction type",
+                        "enum": ["credit", "debit"]
+                    },
+                    "amount": {
+                        "type": "number",
+                        "description": "Transaction amount"
+                    },
+                    "currency": {
+                        "type": "string",
+                        "description": "Transaction currency"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Transaction description"
+                    },
+                    "category": {
+                        "type": "string",
+                        "description": "Transaction category"
+                    },
+                    "balance": {
+                        "type": "number",
+                        "description": "Balance after transaction"
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Transaction timestamp"
+                    },
+                    "status": {
+                        "type": "string",
+                        "description": "Transaction status",
+                        "enum": ["completed", "pending", "failed"]
+                    }
+                }
+            }
+        },
+        "pagination": {
+            "type": "object",
+            "properties": {
+                "page": {
+                    "type": "number",
+                    "description": "Current page number"
+                },
+                "limit": {
+                    "type": "number",
+                    "description": "Items per page"
+                },
+                "totalPages": {
+                    "type": "number",
+                    "description": "Total number of pages"
+                },
+                "totalRecords": {
+                    "type": "number",
+                    "description": "Total number of records"
+                }
+            }
+        }
+    },
+    "example": {
+        "success": true,
+        "accountId": "ACC001",
+        "transactions": [
+            {
+                "id": "TXN001",
+                "type": "credit",
+                "amount": 1000,
+                "currency": "USD",
+                "description": "Salary deposit",
+                "category": "income",
+                "balance": 5000,
+                "timestamp": "2024-01-15T10:30:00Z",
+                "status": "completed"
+            },
+            {
+                "id": "TXN002",
+                "type": "debit",
+                "amount": 50,
+                "currency": "USD",
+                "description": "ATM withdrawal",
+                "category": "withdrawal",
+                "balance": 4950,
+                "timestamp": "2024-01-16T15:45:00Z",
+                "status": "completed"
+            }
+        ],
+        "pagination": {
+            "page": 1,
+            "limit": 20,
+            "totalPages": 1,
+            "totalRecords": 2
+        }
+    }
+} 

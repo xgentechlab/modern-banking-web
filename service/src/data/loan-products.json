@@ -1,0 +1,100 @@
+{
+    "loanProducts": [
+        {
+            "id": "LP001",
+            "name": "Personal Loan",
+            "description": "Unsecured personal loan for any purpose",
+            "minAmount": 1000,
+            "maxAmount": 50000,
+            "minTenure": 12,
+            "maxTenure": 60,
+            "interestRate": {
+                "type": "fixed",
+                "rate": 12.5,
+                "calculationType": "reducing"
+            },
+            "processingFee": {
+                "type": "percentage",
+                "value": 1,
+                "minAmount": 100,
+                "maxAmount": 5000
+            },
+            "eligibility": {
+                "minAge": 21,
+                "maxAge": 65,
+                "minIncome": 25000,
+                "minCreditScore": 700,
+                "employmentType": ["salaried", "self-employed"]
+            },
+            "documents": [
+                {
+                    "type": "identity",
+                    "name": "Government ID",
+                    "required": true
+                },
+                {
+                    "type": "income",
+                    "name": "Income Proof",
+                    "required": true
+                },
+                {
+                    "type": "address",
+                    "name": "Address Proof",
+                    "required": true
+                }
+            ],
+            "status": "active"
+        },
+        {
+            "id": "LP002",
+            "name": "Home Loan",
+            "description": "Secured loan for home purchase or construction",
+            "minAmount": 100000,
+            "maxAmount": 1000000,
+            "minTenure": 60,
+            "maxTenure": 360,
+            "interestRate": {
+                "type": "floating",
+                "baseRate": 8.5,
+                "spread": 1,
+                "calculationType": "reducing"
+            },
+            "processingFee": {
+                "type": "percentage",
+                "value": 0.5,
+                "minAmount": 10000,
+                "maxAmount": 50000
+            },
+            "eligibility": {
+                "minAge": 25,
+                "maxAge": 70,
+                "minIncome": 50000,
+                "minCreditScore": 750,
+                "employmentType": ["salaried", "self-employed"]
+            },
+            "documents": [
+                {
+                    "type": "identity",
+                    "name": "Government ID",
+                    "required": true
+                },
+                {
+                    "type": "income",
+                    "name": "Income Proof",
+                    "required": true
+                },
+                {
+                    "type": "address",
+                    "name": "Address Proof",
+                    "required": true
+                },
+                {
+                    "type": "property",
+                    "name": "Property Documents",
+                    "required": true
+                }
+            ],
+            "status": "active"
+        }
+    ]
+} 
