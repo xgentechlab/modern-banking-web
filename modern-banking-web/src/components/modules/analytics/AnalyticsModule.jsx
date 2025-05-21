@@ -6,6 +6,9 @@ import { useCustomer } from '../../../context/CustomerContext';
 
 const ModuleContainer = styled(Box)`
   padding: 1rem;
+   @media (max-width: 600px) {
+    padding-bottom: 3rem;
+  }
 `;
 
 const AnalyticsModule = ({ 

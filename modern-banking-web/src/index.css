@@ -66,3 +66,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Hide the React Query DevTools toggle button */
+.ReactQueryDevtools-toggle {
+  display: none !important;
+}
+
+/* Alternative selector if the above doesn't work */
+div[data-rqdt] {
+  display: none !important;
+}

@@ -4,7 +4,7 @@ import { Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import { FlexBox } from '../../theme/components';
 import ChatMessage from './ChatMessage';
-
+import logo from '../../assets/logo.webp';
 const ChatContainer = styled(Box)`
   height: calc(100vh ); // Adjust based on your header/footer
   display: flex;
@@ -20,12 +20,18 @@ const ChatContainer = styled(Box)`
   ::-webkit-scrollbar {
     display: none;
   }
+  @media (max-width: 600px) {
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+  }
 `;
 
 const MessagesContainer = styled(Box)`
   flex: 1;
   overflow-y: auto;
   padding: 1rem;
+  @media (max-width: 600px) {
+    padding: 0rem;
+  }
   
 `;
 
@@ -47,6 +53,9 @@ const ChatWindow = ({ messages = [], onParameterResolved, smartMode }) => {
   return (
     <ChatContainer>
       <MessagesContainer>
+      <div style={{width: '100%', backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
+     <img src={logo} alt="logo" style={{width: '100px', height: '50px', margin: '0.25rem' } }/>
+     </div>
         <FlexBox direction="column" gap="1rem" sx={{paddingX: {xs: 0, md: 5}}}>
           {messages.map((message) => (
             <motion.div

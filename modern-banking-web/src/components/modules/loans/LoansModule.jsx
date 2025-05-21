@@ -11,6 +11,9 @@ import { getUserLoans } from '../../../services/loanService';
 const ModuleContainer = styled.div`
   padding: 1rem;
   width: 100%;
+   @media (max-width: 600px) {
+    padding-bottom: 4rem;
+  }
 `;
 
 const containerVariants = {
@@ -140,7 +143,14 @@ const LoansModule = ({
       <GridBox 
         columns={ "repeat(auto-fit, minmax(300px, 1fr))" }
         gap="2rem"
-        padding="1rem 0"
+        
+        sx={{
+          padding: '1rem 0',
+          '@media (max-width: 600px)': {
+            padding: '0 0.5rem',
+            gap: '1rem',
+          },
+        }}
       >
         {loans.loans.map((loan) => (
           <motion.div key={loan.id} variants={itemVariants}>

@@ -21,15 +21,27 @@ import {
   MenuItem,
   FormControl,
   InputLabel,
-  LinearProgress
+  LinearProgress,
+  Chip
 } from '@mui/material';
 import { Download as DownloadIcon } from '@mui/icons-material';
 import { FlexBox } from '../../../../theme/components';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import PaymentsIcon from '@mui/icons-material/Payments';
+import PercentIcon from '@mui/icons-material/Percent';
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
+import MoneyOffIcon from '@mui/icons-material/MoneyOff';
+import EventIcon from '@mui/icons-material/Event';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+// import { formatCurrency } from '../../../../utils/formatters';
 
 const LoanContainer = styled(Card)`
   width: 100%;
   margin: 16px;
-  
+  @media (max-width: 600px) {
+  margin: 0;
 `;
 
 const TabPanel = styled(Box)`
@@ -166,20 +178,39 @@ const LoanCard = ({
           {loanDetails?.loanName} ({loanDetails?.id})
         </Typography>
         
-        <InfoGrid>
-          <Typography variant="body1">
-            Loan Amount: {formatCurrency(loanDetails?.amount)}
-          </Typography>
-          <Typography variant="body1">
-            EMI Amount: {formatCurrency(loanDetails?.emi)}
-          </Typography>
-          <Typography variant="body1">
-            Interest Rate: {loanDetails?.interestRate}%
-          </Typography>
-          <Typography variant="body1">
-            Tenure: {loanDetails?.tenure} months
-          </Typography>
-        </InfoGrid>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mt: 2 }}>
+          <Chip
+            icon={<AttachMoneyIcon />}
+            label={`${formatCurrency(loanDetails?.amount)}`}
+            color="primary"
+            size="medium"
+            sx={{ fontWeight: 500, width: '40%' }}
+          />
+          
+          <Chip
+            icon={<PaymentsIcon />}
+            label={`EMI: ${formatCurrency(loanDetails?.emi)}`}
+            color="secondary"
+            size="medium"
+            sx={{ fontWeight: 500  , width: '40%'}}
+          />
+          
+          <Chip
+            icon={<PercentIcon />}
+            label={`${loanDetails?.interestRate}%`}
+            color="info"
+            size="medium"
+            sx={{ fontWeight: 500 , width: '40%' }}
+          />
+          
+          <Chip
+            icon={<CalendarTodayIcon />}
+            label={`${loanDetails?.tenure} months`}
+            color="default"
+            size="medium"
+            sx={{ fontWeight: 500 , width: '40%'}}
+          />
+        </Box>
 
         <ProgressContainer>
           <ProgressLabel>
@@ -210,26 +241,77 @@ const LoanCard = ({
 
         {/* Loan Details Tab */}
         <TabPanel hidden={activeTab !== 0}>
-          <InfoGrid>
-            <Typography variant="body1">
-              Next EMI Date: {formatDate(loanDetails?.nextEmiDate)}
-            </Typography>
-            <Typography variant="body1">
-              Remaining EMIs: {loanDetails?.remainingEmis}
-            </Typography>
-            <Typography variant="body1">
-              Total Interest Paid: {formatCurrency(loanDetails?.totalInterestPaid)}
-            </Typography>
-            <Typography variant="body1">
-              Disbursement Date: {formatDate(loanDetails?.disbursementDate)}
-            </Typography>
-            <Typography variant="body1">
-              Loan Purpose: {loanDetails?.purpose}
-            </Typography>
-            <Typography variant="body1">
-              Status: {loanDetails?.status.toUpperCase()}
-            </Typography>
-          </InfoGrid>
+          <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 2, mt: 2 }}>
+            <Paper elevation={0} sx={{ p: 1.5, bgcolor: 'background.paper', borderRadius: 1, border: '1px solid', borderColor: 'divider' }}>
+              <Box sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', mb: 1 }}>
+                <CalendarTodayIcon color="primary" sx={{ mr: 1, fontSize: 20 }} />
+                <Typography variant="subtitle2">Next EMI Date</Typography>
+              </Box>
+              <Typography variant="body1" fontWeight={500}>
+                {formatDate(loanDetails?.nextEmiDate)}
+              </Typography>
+            </Paper>
+            
+            <Paper elevation={0} sx={{ p: 1.5, bgcolor: 'background.paper', borderRadius: 1, border: '1px solid', borderColor: 'divider' }}>
+              <Box sx={{ display: 'flex', alignItems: 'flex-start', mb: 1 }}>
+                <FormatListNumberedIcon color="secondary" sx={{ mr: 1, fontSize: 20 }} />
+                <Typography variant="subtitle2">Remaining EMIs</Typography>
+              </Box>
+              <Typography variant="body1" fontWeight={500}>
+                {loanDetails?.remainingEmis}
+              </Typography>
+            </Paper>
+            
+            <Paper elevation={0} sx={{ p: 1.5, bgcolor: 'background.paper', borderRadius: 1, border: '1px solid', borderColor: 'divider' }}>
+              <Box sx={{ display: 'flex', alignItems: 'flex-start', mb: 1 }}>
+                <MoneyOffIcon color="info" sx={{ mr: 1, fontSize: 20 }} />
+                <Typography variant="subtitle2">Total Interest Paid</Typography>
+              </Box>
+              <Typography variant="body1" fontWeight={500}>
+                {formatCurrency(loanDetails?.totalInterestPaid)}
+              </Typography>
+            </Paper>
+            
+            <Paper elevation={0} sx={{ p: 1.5, bgcolor: 'background.paper', borderRadius: 1, border: '1px solid', borderColor: 'divider' }}>
+              <Box sx={{ display: 'flex', alignItems: 'flex-start', mb: 1 }}>
+                <EventIcon color="default" sx={{ mr: 1, fontSize: 20 }} />
+                <Typography variant="subtitle2">Disbursement Date</Typography>
+              </Box>
+              <Typography variant="body1" fontWeight={500}>
+                {formatDate(loanDetails?.disbursementDate)}
+              </Typography>
+            </Paper>
+            
+            <Paper elevation={0} sx={{ p: 1.5, bgcolor: 'background.paper', borderRadius: 1, border: '1px solid', borderColor: 'divider' }}>
+              <Box sx={{ display: 'flex', alignItems: 'flex-start', mb: 1 }}>
+                <AssignmentIcon color="default" sx={{ mr: 1, fontSize: 20 }} />
+                <Typography variant="subtitle2">Loan Purpose</Typography>
+              </Box>
+              <Typography variant="body1" fontWeight={500}>
+                {loanDetails?.purpose}
+              </Typography>
+            </Paper>
+            
+            <Paper elevation={0} sx={{ p: 1.5, bgcolor: 'background.paper', borderRadius: 1, border: '1px solid', borderColor: 'divider' }}>
+              <Box sx={{ display: 'flex', alignItems: 'flex-start', mb: 1 }}>
+                <FiberManualRecordIcon 
+                  sx={{ 
+                    mr: 1, 
+                    fontSize: 20,
+                    color: loanDetails?.status.toLowerCase() === 'active' ? 'success.main' : 'text.secondary'
+                  }} 
+                />
+                <Typography variant="subtitle2">Status</Typography>
+              </Box>
+              <Typography 
+                variant="body1" 
+                fontWeight={500}
+                color={loanDetails?.status.toLowerCase() === 'active' ? 'success.main' : 'text.secondary'}
+              >
+                {loanDetails?.status.toUpperCase()}
+              </Typography>
+            </Paper>
+          </Box>
         </TabPanel>
 
         {/* EMI Schedule Tab */}

@@ -54,7 +54,11 @@ const VisualizationContainer = styled('div')({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  padding: '16px'
+  padding: '16px',
+  '@media (max-width: 600px)': {
+    padding: '0',
+    // border: '1px solid red',
+  },
 });
 
 const NoDataContainer = styled(Box)({

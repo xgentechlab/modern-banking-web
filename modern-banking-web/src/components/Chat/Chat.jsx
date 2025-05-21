@@ -6,7 +6,7 @@ import ChatInput from './ChatInput';
 import { processMessage, processSmartText, submitMissingParameters } from '../../services/api';
 import { useCustomer } from '../../context/CustomerContext';
 import { useModule } from '../../context/ModuleContext';
-
+import logo from '../../assets/logo.webp';
 
 const ChatContainer = styled(Box)`
   position: fixed;
@@ -16,7 +16,7 @@ const ChatContainer = styled(Box)`
   bottom: 0;
   display: flex;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.7);
+  // background: rgba(0, 0, 0, 0.7);
   
 `;
 
@@ -56,6 +56,7 @@ const Chat = () => {
       else greeting = 'Good evening';
 
       setMessages([
+       
         {
           id: 'welcome',
           text: `${greeting}, ${name}! I'm your banking assistant. How can I help you today?`,
@@ -206,6 +207,8 @@ const Chat = () => {
   if (error) {
     return (
       <ChatContainer>
+        {/* add logo Here */}
+        
         <ChatWindow 
           messages={[{
             id: 'error',
@@ -221,18 +224,8 @@ const Chat = () => {
 
   return (
     <ChatContainer>
-      <ToggleContainer>
-        <FormControlLabel
-          control={
-            <Switch
-              checked={smartMode}
-              onChange={handleSmartModeToggle}
-              color="primary"
-            />
-          }
-          label="Smart Mode"
-        />
-      </ToggleContainer>
+      
+      
       <ChatWindow 
         messages={messages}
         onParameterResolved={handleParameterResolved}

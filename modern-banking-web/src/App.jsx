@@ -13,8 +13,10 @@ import Chat from './components/Chat/Chat';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import backgroundImage from './assets/digital-banking-bg.jpg';
+import BackgroundVideo from './assets/empowering-banks-video-11.mp4';
+
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoginFading, setIsLoginFading] = useState(false);
 
   const handleLoginSuccess = () => {
@@ -25,7 +27,40 @@ const App = () => {
   };
 
   return (
-    <div className="app" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backdropFilter: 'blur(10px)' }}>
+    <div className="app">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        style={{
+          position: 'fixed',
+          left: '0',
+          top: '0',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          // zIndex: -1,
+          // border: '1px solid red',
+        }}
+      >
+        <source src={BackgroundVideo} type="video/mp4" />
+        {/* Fallback to background image if video doesn't load */}
+        Your browser does not support the video tag.
+      </video>
+      
+      {/* Optional overlay to darken or adjust video brightness */}
+      <div
+        style={{
+          position: 'fixed',
+          width: '100%',
+          height: '100%',
+           // backgroundColor: 'rgba(0, 0, 0, 0.3)', // Adjust opacity as needed
+          // backdropFilter: 'blur(5px)', // Optional blur effect
+          zIndex: -1,
+        }}
+      />
+
       {!isLoggedIn && (
         <div className={`component-container ${isLoginFading ? 'fade-out' : ''}`}>
           <Login onLoginSuccess={handleLoginSuccess} />

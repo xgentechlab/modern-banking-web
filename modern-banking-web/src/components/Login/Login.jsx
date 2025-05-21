@@ -45,17 +45,22 @@ const LoginContainer = styled(Box)`
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    // background: rgba(0, 0, 0, 0.7);
     
   }
   &.fade-out {
     animation: ${fadeOut} 0.6s ease-in forwards;
   }
+
+ @media (max-width: 600px) {
+    width: 100%
+    padding: 0;
+  }
 `;
 
 const GlassBox = styled(Box)`
   position: relative;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px);
   border-radius: 20px;
   padding: 40px;
@@ -63,6 +68,10 @@ const GlassBox = styled(Box)`
   max-width: 400px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
+  @media (max-width: 600px) {
+    width: 90%;
+    padding: 20px;
+  }
 `;
 
 const StyledTextField = styled(TextField)`

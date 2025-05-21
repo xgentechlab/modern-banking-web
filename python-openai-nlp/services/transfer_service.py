@@ -24,7 +24,7 @@ class TransferService:
         Args:
             entities: Dictionary of extracted entities
             module_code: The module code (e.g., 'TRF')
-            submodule_code: The submodule code (e.g., 'TRF_INTERNAL')
+            submodule_code: The submodule code (e.g., 'TRF_IMMEDIATE')
             
         Returns:
             Dict containing resolution results and any necessary clarifying questions

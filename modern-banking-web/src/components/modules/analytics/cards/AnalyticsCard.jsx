@@ -36,7 +36,9 @@ const SummarySection = styled(Box)`
   background: ${props => props.theme.palette.background.paper};
   border-radius: ${props => props.theme.shape.borderRadius}px;
   margin-bottom: 1rem;
+  margin-left: 1rem;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  // border: 1px solid red;
 `;
 
 const SummaryItem = styled(Box)`
@@ -517,7 +519,7 @@ const AnalyticsCard = ({ nlpResponse }) => {
     return (
       <SummarySection>
         {items.map((item, index) => (
-          <SummaryItem key={index}>
+          <SummaryItem key={index} sx={{ '@media (max-width: 600px)': { display: 'flex', justifyContent: 'space-between' } }}>
             <Typography className="label">{item.label}</Typography>
             <Typography className="value">{item.value}</Typography>
           </SummaryItem>
@@ -558,9 +560,9 @@ const AnalyticsCard = ({ nlpResponse }) => {
 
         {/* Visualization Section */}
         <Box>
-          <Typography variant="h6" gutterBottom color="primary">
+          {/* <Typography variant="h6" gutterBottom color="primary">
             {visualization?.title || getAnalyticsTitle(analyticsType || derivedAnalyticsType)}
-          </Typography>
+          </Typography> */}
           <VisualizationRenderer
             type={visualization?.type || mapVisualizationType(visualizationType || 'line_chart')}
             data={data}

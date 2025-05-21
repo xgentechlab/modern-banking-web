@@ -9,6 +9,9 @@ import dummyData from '../../../data/dummy.json';
 const ModuleContainer = styled.div`
   padding: 1rem;
   width: 100%;
+   @media (max-width: 600px) {
+    padding-bottom: 3rem;
+  }
 `;
 
 const containerVariants = {

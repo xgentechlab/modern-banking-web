@@ -70,7 +70,7 @@ const AddBeneficiaryCard = ({
   banksList = [],
   accountTypes = [],
   onSubmit,
-  onVerify,
+  onVerify = () => {},
   loading = false
 }) => {
   const [activeStep, setActiveStep] = useState(0);
@@ -111,10 +111,10 @@ const AddBeneficiaryCard = ({
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (activeStep === 0) {
-      const success = await onSubmit(formData);
-      if (success) {
+      // const success = await onSubmit(formData);
+      
         setActiveStep(1);
-      }
+      
     } else {
       const otpValue = otp.join('');
       onVerify(otpValue);
@@ -139,7 +139,7 @@ const AddBeneficiaryCard = ({
         <CircleIcon>
           <PersonAddIcon />
         </CircleIcon>
-        <div>
+        <div style={{textAlign: 'left'}}>
           <Typography variant="h6">Add New Beneficiary</Typography>
           <Typography variant="body2" color="text.secondary">
             Add and verify a new beneficiary for quick transfers

@@ -3,7 +3,7 @@ import { Card, Box } from '@mui/material';
 import { themeConfig } from './theme';
 
 export const GlassCard = styled(Card)`
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: ${themeConfig.shadows.card};

@@ -4,6 +4,9 @@ import { Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import AllBeneficiariesCard from './cards/AllBeneficiariesCard';
 import AddBeneficiaryCard from './cards/AddBeneficiaryCard';
+import { useQuery } from '@tanstack/react-query';
+import { getBeneficiary } from '../../../services/beneficiaryService';
+import { useCustomer } from '../../../context/CustomerContext';
 
 const ModuleContainer = styled(motion.div)`
   display: grid;
@@ -11,6 +14,9 @@ const ModuleContainer = styled(motion.div)`
   gap: 2rem;
   width: 100%;
   padding: 1rem;
+   @media (max-width: 600px) {
+    padding-bottom: 4rem;
+  }
 `;
 
 const containerVariants = {
@@ -36,10 +42,12 @@ const itemVariants = {
   }
 };
 
+const banks = [{id: "HDFC", name: "HDFC"}, {id: "ICICI", name: "ICICI"}, {id: "SBI", name: "SBI"}, {id: "AXIS", name: "AXIS"}, {id: "KOTAK", name: "KOTAK"}, {id: "RBL", name: "RBL"}, {id: "IDBI", name: "IDBI"}, {id: "CITI", name: "CITI"}]
+const accounts = [{id: "Savings", name: "Savings"}, {id: "Current", name: "Current"}, {id: "Salary", name: "Salary"}, {id: "Demat", name: "Demat"}, {id: "NRI", name: "NRI"}]
 const BeneficiariesModule = ({
-  beneficiaries = [],
-  banksList = [],
-  accountTypes = [],
+  
+  banksList = banks,
+  accountTypes = accounts,
   onAddBeneficiary,
   onVerifyBeneficiary,
   onSearch,
@@ -47,10 +55,22 @@ const BeneficiariesModule = ({
   onTransfer,
   onEdit,
   onDelete,
-  loading = false
+  loading = false,
+  showList = true,
+  showDetails = false,
+  showForm = false,
+  showBeneficiaryForm
 }) => {
+  const { customer } = useCustomer();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedFilter, setSelectedFilter] = useState('all');
+
+  const { isLoading, error, data: beneficiariesList = [] } = useQuery({
+    queryKey: ['beneficiaries', customer?.profile.id],
+    queryFn: () => getBeneficiary(customer?.profile.id, ""),
+    cacheTime: 0,
+    // enabled: viewMode === 'grid'
+  });
 
   const handleSearch = (term) => {
     setSearchTerm(term);
@@ -72,18 +92,18 @@ const BeneficiariesModule = ({
       initial="hidden"
       animate="visible"
     >
-      <motion.div variants={itemVariants}>
+      {showList && <motion.div variants={itemVariants}>
         <AllBeneficiariesCard
-          beneficiaries={beneficiaries}
+          beneficiaries={beneficiariesList}
           onSearch={handleSearch}
           onFilter={handleFilter}
           onTransfer={onTransfer}
           onEdit={onEdit}
           onDelete={onDelete}
         />
-      </motion.div>
+      </motion.div>}
 
-      <motion.div variants={itemVariants}>
+      {showBeneficiaryForm && <motion.div variants={itemVariants}>
         <AddBeneficiaryCard
           banksList={banksList}
           accountTypes={accountTypes}
@@ -91,7 +111,7 @@ const BeneficiariesModule = ({
           onVerify={onVerifyBeneficiary}
           loading={loading}
         />
-      </motion.div>
+      </motion.div>}
     </ModuleContainer>
   );
 };

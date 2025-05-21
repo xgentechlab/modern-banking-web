@@ -29,6 +29,7 @@ const MessageCard = styled(GlassCard)`
 
   @media (max-width: 600px) {
     max-width: ${props => props.isStructured ? '100%' : '90%'};
+    text-align: ${props => props.isUser ? 'right' : 'left'};
   }
 `;
 
@@ -191,28 +192,6 @@ const ChatMessage = ({
     return null;
   };
 
-  const renderParameterResolution = () => {
-    if (!isUser && validation?.missing_parameters?.length > 0) {
-      return validation.missing_parameters.map((param, index) => (
-        <EnhancedParameterResolver
-          key={`${param.name}-${index}`}
-          parameter={{
-            ...param,
-            question: validation.questions.find(q => q.parameter === param.name)?.question
-          }}
-          onParameterResolved={(value) => onParameterResolved(id, param.name, value)}
-          validationRules={{
-            required: true,
-            pattern: param.validation?.pattern && new RegExp(param.validation.pattern),
-            errorMessage: param.validation?.errorMessage,
-            custom: param.validation?.custom
-          }}
-          context={entities}
-        />
-      ));
-    }
-    return null;
-  };
   
   return (
     <div >

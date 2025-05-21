@@ -118,6 +118,23 @@ const SEASONAL_PERIODS = [
     { name: 'Year End Sale', start: '2024-12-15', end: '2024-12-31', multiplier: 1.8 }
 ];
 
+// Add transaction categories mapping
+const TRANSACTION_CATEGORIES = {
+    TRANSFER: 'Money Transfer',
+    WITHDRAWAL: 'Cash Withdrawal',
+    DEPOSIT: 'Cash Deposit',
+    INVESTMENT: 'Investments',
+    CARD_PAYMENT: 'Shopping',
+    BILL_PAYMENT: 'Bills & Utilities',
+    SALARY: 'Income',
+    EMI: 'Loans',
+    SUBSCRIPTION: 'Entertainment',
+    INSURANCE: 'Insurance',
+    REFUND: 'Refunds',
+    CASHBACK: 'Cashback',
+    INTEREST: 'Interest'
+};
+
 function generateTransactionId(index) {
     return `TXN${String(index).padStart(8, '0')}`;
 }
@@ -269,6 +286,37 @@ function determineTransactionType(txnType, fromAccountId, toAccountId) {
     return 'DEBIT';
 }
 
+// Function to get transaction category based on type and description
+function getTransactionCategory(type, description) {
+    // Base category from transaction type
+    let category = TRANSACTION_CATEGORIES[type] || 'Miscellaneous';
+    
+    // Refine categories based on description
+    if (description) {
+        const desc = description.toLowerCase();
+        
+        if (type === 'CARD_PAYMENT') {
+            if (desc.includes('grocery') || desc.includes('shopping')) {
+                category = 'Shopping';
+            } else if (desc.includes('dining') || desc.includes('restaurant')) {
+                category = 'Food & Dining';
+            } else if (desc.includes('luxury')) {
+                category = 'Luxury';
+            }
+        } else if (type === 'BILL_PAYMENT') {
+            if (desc.includes('electricity')) {
+                category = 'Utilities';
+            } else if (desc.includes('mobile')) {
+                category = 'Phone';
+            } else if (desc.includes('credit card')) {
+                category = 'Credit Card';
+            }
+        }
+    }
+    
+    return category;
+}
+
 async function generateTransactions() {
     const startDate = new Date('2024-01-01T00:00:00Z');
     const endDate = new Date('2024-12-31T23:59:59Z');
@@ -316,6 +364,7 @@ async function generateTransactions() {
                     currency: "INR",
                     status: "SUCCESS",
                     description: transaction.description,
+                    category: getTransactionCategory(transaction.type, transaction.description),
                     transactionDate: transaction.date.toISOString(),
                     valueDate: transaction.date.toISOString(),
                     channel: transaction.channel,

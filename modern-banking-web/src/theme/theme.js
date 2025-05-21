@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
 export const themeConfig = {
   colors: {
     primary: {
-      main: '#7C4DFF', // Main purple color from the design
+      main: '#d65420', // Main purple color from the design
       light: '#9E7BFF',
       dark: '#5C35CC',
       contrastText: '#FFFFFF',
@@ -50,7 +50,7 @@ export const themeConfig = {
   borderRadius: {
     small: '0.375rem',
     medium: '0.75rem',
-    large: '1.5rem',
+    large: '0.75rem',
     circle: '50%',
   },
   shadows: {
@@ -153,6 +153,40 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           backgroundImage: 'none',
+        },
+      },
+    },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          borderRadius: themeConfig.borderRadius.medium,
+          fontWeight: 500,
+          '&.MuiChip-colorPrimary': {
+            backgroundColor: `${themeConfig.colors.primary.main}15`, // 15% opacity
+            color: themeConfig.colors.primary.main,
+            borderColor: themeConfig.colors.primary.main,
+          },
+          '&.MuiChip-colorSecondary': {
+            backgroundColor: `${themeConfig.colors.secondary.main}15`,
+            color: themeConfig.colors.secondary.main,
+            borderColor: themeConfig.colors.secondary.main,
+          },
+          '&.MuiChip-colorInfo': {
+            backgroundColor: '#1976d215',
+            color: '#1976d2',
+            borderColor: '#1976d2',
+          },
+          '&.MuiChip-colorDefault': {
+            backgroundColor: `${themeConfig.colors.grey[300]}50`,
+            color: themeConfig.colors.text.primary,
+            borderColor: themeConfig.colors.grey[300],
+          },
+        },
+        icon: {
+          color: 'inherit',
+        },
+        label: {
+          padding: '0 12px',
         },
       },
     },

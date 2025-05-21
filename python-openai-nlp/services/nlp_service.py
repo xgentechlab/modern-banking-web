@@ -155,7 +155,7 @@ For "Transfer $500 from savings to checking", I would return:
 {
   "module": "TRF",
   "sub_module": {
-    "submoduleCode": "TRF_INTERNAL",
+    "submoduleCode": "TRF_IMMEDIATE",
     "submoduleName": "Internal Transfer"
   },
   "entities": {

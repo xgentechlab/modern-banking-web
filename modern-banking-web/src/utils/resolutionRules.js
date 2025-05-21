@@ -67,7 +67,7 @@ export const ACTION_TYPES = {
             component: 'AccountsModule',
             config: {
               viewMode: 'grid',
-              showBalances: true,
+              showBalances: false,
               showTransactions: false,
               showStatement: false,
               title: 'Accounts'
@@ -972,5 +972,51 @@ export const ACTION_TYPES = {
           }
         }
       }
+    },
+    "BEN":{
+      "BEN_ADD":{
+        type: ACTION_TYPES.CREATE,
+        resolutionStrategy: {
+          default: {
+            component: 'BeneficiariesModule',
+            config: {
+              viewMode: 'form',
+              showBeneficiaryForm: true,
+              showList: false,
+              showDetails: false
+            }
+          }
+        },
+      },
+      "BEN_LIST":{
+        type: ACTION_TYPES.READ,
+        resolutionStrategy: {
+          default: {
+            component: 'BeneficiariesModule',
+            config: {
+              viewMode: 'grid',
+              showList: true,
+              showDetails: false
+            }
+          }
+        }
+      },
+      "BEN_DETAILS":{
+        type: ACTION_TYPES.READ,
+        resolutionStrategy: {
+          default: {
+            component: 'BeneficiariesModule',
+          }
+        }
+      },
+      "BEN_EDIT":{
+        type: ACTION_TYPES.UPDATE,
+        resolutionStrategy: {
+          default: {
+            component: 'BeneficiariesModule',
+          }
+        }
+      }
     }
+      
   };

@@ -12,6 +12,7 @@ const ErrorCard = styled(GlassCard)`
   width: 100%;
   max-width: 600px;
   margin: 1rem auto;
+  margin-bottom: 5rem;
 `;
 
 const IconContainer = styled(FlexBox)`

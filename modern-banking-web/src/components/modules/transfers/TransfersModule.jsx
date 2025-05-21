@@ -10,6 +10,9 @@ import TransactionCard from './cards/TransactionCard';
 const ModuleContainer = styled.div`
   padding: 1rem;
   width: 100%;
+   @media (max-width: 600px) {
+    padding-bottom: 3rem;
+  }
 `;
 
 const containerVariants = {
@@ -107,7 +110,10 @@ const TransfersModule = ({
       animate="visible"
       sx={{
         width: '60vw',
-        padding: '1rem'
+        padding: '1rem',
+        '@media (max-width: 600px)': {
+          width: '90vw',
+        },
       }}
     >
       <Typography variant="h4" gutterBottom sx={{
@@ -123,9 +129,10 @@ const TransfersModule = ({
         columns="repeat(auto-fit, minmax(400px, 1fr))" 
         gap="2rem"
         padding="1rem 0"
+        
       >
         {response ? (
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} >
             <TransactionCard
               nlpResponse={response}
               onResolve={onResolve}
@@ -137,7 +144,7 @@ const TransfersModule = ({
         ) : (
           <>
             {showQuickTransfer && (
-              <motion.div variants={itemVariants}>
+              <motion.div variants={itemVariants} >
                 <QuickTransferCard
                   accounts={accounts}
                   beneficiaries={beneficiaries}

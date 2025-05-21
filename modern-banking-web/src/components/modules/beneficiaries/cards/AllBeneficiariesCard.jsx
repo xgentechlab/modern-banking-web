@@ -170,10 +170,10 @@ const AllBeneficiariesCard = ({
     <BeneficiariesCard>
       <FlexBox justify="space-between" align="center">
         <FlexBox gap="1rem">
-          <CircleIcon>
+          <CircleIcon style={{backgroundColor: '#d65420'}}>
             <PeopleIcon />
           </CircleIcon>
-          <div>
+          <div style={{textAlign: 'left'}}>
             <Typography variant="h6">Your Beneficiaries</Typography>
             <Typography variant="body2" color="text.secondary">
               Manage your saved beneficiaries
@@ -222,10 +222,10 @@ const AllBeneficiariesCard = ({
         {beneficiaries.map((beneficiary) => (
           <BeneficiaryItem key={beneficiary.id} justify="space-between" align="center">
             <FlexBox gap="1rem" flex={1}>
-              <CircleIcon size="32px">
+              <CircleIcon size="32px" style={{backgroundColor: '#d65420'}}>
                 <PeopleIcon fontSize="small" />
               </CircleIcon>
-              <div>
+              <div style={{textAlign: 'left'}}>
                 <Typography variant="body1" fontWeight="500">
                   {beneficiary.name}
                 </Typography>

@@ -37,6 +37,7 @@ const AccountCard = styled(GlassCard)`
   &:hover {
     transform: translateY(-4px);
   }
+ 
 `;
 
 const BalanceAmount = styled(Typography)`
@@ -49,6 +50,9 @@ const BalanceAmount = styled(Typography)`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 2rem 0;
+  @media (max-width: 600px) {
+   
+  }
 `;
 
 const Section = styled.div`
@@ -207,18 +211,28 @@ const EnhancedAccountCard = ({
 
   return (
     <AccountCard>
-      <FlexBox justify="space-between">
+      <FlexBox justify="space-between" >
         <FlexBox gap="1rem">
-          <CircleIcon>
+          <CircleIcon sx={{
+            '@media (max-width: 600px)': {
+              backgroundColor: 'orange',
+            },
+          }}>
             <AccountBalanceWalletIcon />
           </CircleIcon>
-          <div>
+          <div sx={{
+            '@media (max-width: 600px)': {
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
+            },
+          }}>
             
             <Typography variant="body1" >
               {accountNumber}
             </Typography>
             <Typography variant="body2" color="text.secondary">{name || accountType}</Typography>
-            <BalanceAmount variant="h6">
+            <BalanceAmount >
         {formatAmount(balance)}
       </BalanceAmount>
           </div>
@@ -229,9 +243,20 @@ const EnhancedAccountCard = ({
       
 
       {/* Action Buttons */}
-      <FlexBox gap="1rem" marginTop="1rem">
-        <Button
-          variant="outlined"
+      <FlexBox  marginTop="1rem" sx={{
+        gap: '0.5rem',
+        '@media (max-width: 600px)': {
+          flexDirection: 'column',
+          position: 'absolute',
+          top: 0,
+          right: 0,
+          marginRight: '0.5rem',
+          
+          
+        },
+      }}>
+        <Button size='small'
+          // variant="outlined"
           
           onClick={handleShowTransactions}
           
@@ -239,7 +264,7 @@ const EnhancedAccountCard = ({
          <ReceiptLongIcon />
         </Button>
         <Button
-          variant="outlined"
+          // variant="outlined"
          
           onClick={handleStatementModalOpen}
           

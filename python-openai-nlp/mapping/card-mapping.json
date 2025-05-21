@@ -80,5 +80,20 @@
             "requestFile": "src/dataFormats/card/redeem-rewards-request.json",
             "endpoint": "/api/cards/:cardId/rewards/redeem"
         }
-    ]
+    ],
+    "properties": {
+        "cardId": {
+            "type": "string",
+            "description": "The ID of the card"
+        },
+        "cardType": {
+            "type": "string",
+            "description": "The type of card",
+            "enum": ["DEBIT", "CREDIT"]
+        },
+        "cardNumber": {
+            "type": "string",
+            "description": "The number of the card"
+        }
+    }
 } 

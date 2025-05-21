@@ -19,7 +19,8 @@ import {
   CircularProgress,
   Box,
   Card,
-  CardContent
+  CardContent,
+  Chip
 } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import { GlassCard, FlexBox, CircleIcon } from '../../../../theme/components';
@@ -28,9 +29,24 @@ import { getBeneficiary } from '../../../../services/beneficiaryService';
 import { getAccounts } from '../../../../services/accountService';
 import { useQuery } from '@tanstack/react-query';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import LocalAtmIcon from '@mui/icons-material/LocalAtm';
+const formatCurrency = (amount) => {
+  return new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: 'INR',
+    maximumFractionDigits: 0
+  }).format(amount);
+};
 
-
-
+const formatDate = (dateString) => {
+  return new Date(dateString).toLocaleDateString('en-IN', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+};
 const StyledTextField = styled(TextField)`
   .MuiOutlinedInput-root {
     background: ${props => props.theme.palette.background.paper};
@@ -75,13 +91,13 @@ const MatchItem = styled.div`
   background: ${props => props.theme.palette.background.paper};
   cursor: pointer;
   transition: ${props => props.theme.transitions.quick};
-
+  @media (max-width: 600px) {
+    text-align: left;
+  }
   &:hover {
     background: ${props => props.theme.palette.grey[50]};
   }
 `;
-
-
 
 const TransactionCard = ({
   nlpResponse = {
@@ -111,8 +127,6 @@ const TransactionCard = ({
   const [currentStep, setCurrentStep] = useState(0);
   const [entities, setEntities] = useState(nlpResponse.entities);
   const [searchTerm, setSearchTerm] = useState('');
-
- 
 
   // Fetch accounts using React Query
   const { 
@@ -242,8 +256,6 @@ const TransactionCard = ({
     }
   };
 
- 
-
   // Submit the transaction
   const handleTransactionSubmit = () => {
     if (onConfirm) {
@@ -350,7 +362,7 @@ const TransactionCard = ({
                       value={account.id}
                       control={<Radio />}
                       label={
-                        <div>
+                        <div style={{textAlign: 'left'}}>
                           <Typography variant="body1">
                             {account.accountTypeName} - {account.accountNumber}
                           </Typography>
@@ -443,7 +455,7 @@ const TransactionCard = ({
                       value={beneficiary.id}
                       control={<Radio />}
                       label={
-                        <div>
+                        <div style={{textAlign: 'left'}}>
                           <Typography variant="body1">
                             {beneficiary.name}
                           </Typography>
@@ -586,33 +598,41 @@ const TransactionCard = ({
     const selectedBeneficiary = beneficiaries.find(beneficiary => beneficiary.id === formData.toBeneficiary)
     
     return (
-      <Box className="transfers-step-container">
-        <Typography variant="h6" className="step-title">Confirm Transfer Details</Typography>
+      <Box className="transfers-step-container" >
+        <Typography variant="h6" className="step-title" style={{textAlign: 'left', paddingBottom: '1rem'}}>Confirm Transfer Details</Typography>
         
         <Box className="confirmation-details">
           <Box className="confirmation-item">
+            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingBottom: '0.5rem'}}>
             <Typography variant="subtitle2">From Account:</Typography>
             <Typography variant="body1">
               {selectedAccount ? 
                 `${selectedAccount.accountTypeName} - ${selectedAccount.accountNumber}` : 
                 entities.sourceAccountId || formData.fromAccount || 'Not specified'}
             </Typography>
+            </div>
           </Box>
           
           <Box className="confirmation-item">
+          <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingBottom: '0.5rem'}}>
+
             <Typography variant="subtitle2">To Beneficiary:</Typography>
             <Typography variant="body1">
               {selectedBeneficiary ? 
                 `${selectedBeneficiary.name} - ${selectedBeneficiary.accountNumber}` : 
                 entities.beneficiaryId || formData.toBeneficiary || entities.recipient || 'Not specified'}
-            </Typography>
+            </Typography> 
+            </div>
           </Box>
           
           <Box className="confirmation-item">
+          <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingBottom: '0.5rem'}}>
+
             <Typography variant="subtitle2">Amount:</Typography>
             <Typography variant="body1" fontWeight="bold">
               {formatCurrency(parseFloat(entities.amount || formData.amount) || 0, entities.currency || 'USD')}
             </Typography>
+            </div>
           </Box>
           
           {formData.notes && (
@@ -695,9 +715,24 @@ const TransactionCard = ({
     );
   };
 
+  // Determine chip color based on transaction type
+  const getChipColor = (type) => {
+    switch (type.toLowerCase()) {
+      case 'credit':
+        return 'success';
+      case 'debit':
+        return 'error';
+      default:
+        return 'default';
+    }
+  };
+
+  let selectedAccount = accounts.find(account => account.id === formData.fromAccount);
+  let selectedBeneficiary = beneficiaries.find(beneficiary => beneficiary.id === formData.toBeneficiary);
+
   // Main component render
   return (
-    <Card className="transaction-card" sx={{width: '50%', height: 'fit-content'}}>
+    <Card className="transaction-card" sx={{width: '50%', height: 'fit-content', '@media (max-width: 600px)': {width: '90vw'}}}>
       <CardContent>
         <Box className="stepper-container" mb={3}>
           <Stepper activeStep={getStepperValue()} alternativeLabel>
@@ -718,6 +753,29 @@ const TransactionCard = ({
         {currentStep === 1.5 && renderAmountEntryStep()}
         {currentStep === 2 && renderConfirmationStep()}
         {currentStep === 3 && renderSuccessStep()}
+
+        {/* <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mt: 2 }}>
+          <Chip
+            icon={<LocalAtmIcon />}
+            label={formatCurrency(parseFloat(entities.amount || formData.amount) || 0)}
+            color={getChipColor(entities.amount ? 'credit' : 'debit')}
+            variant="filled"
+          />
+          
+          <Chip
+            icon={<AccountBalanceIcon />}
+            label={selectedAccount ? `${selectedAccount.accountTypeName} - ${selectedAccount.accountNumber}` : entities.sourceAccountId || formData.fromAccount || 'Not specified'}
+            color="primary"
+            variant="outlined"
+          />
+          
+          <Chip
+            icon={<CalendarTodayIcon />}
+            label={formatDate(entities.date || new Date())}
+            color="default"
+            variant="outlined"
+          />
+        </Box> */}
       </CardContent>
       
       {/* OTP Dialog */}

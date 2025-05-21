@@ -6,12 +6,17 @@ import { FlexBox } from '../../theme/components';
 
 const InputContainer = styled(FlexBox)`
   padding: 1rem;
-  background: ${props => props.theme.palette.background.paper};
+  // background: ${props => props.theme.palette.background.paper};
   border-radius: ${props => props.theme.shape.borderRadius}px;
   box-shadow: ${props => props.theme.shadows[1]};
   width: 70%;
   margin: 0 auto;
   z-index: 1000;
+  @media (max-width: 600px) {
+  padding: 0.5rem;
+    width: 100%;
+    border-radius: 0;
+  }
 `;
 
 const StyledTextField = styled(TextField)`
@@ -72,6 +77,11 @@ const ChatInput = ({ onSendMessage }) => {
           type="submit"
           disabled={!message.trim()}
           aria-label="Send message"
+          style={{
+            backgroundColor: '#d65420',
+            color: 'white',
+            padding: '0.75rem 0.75rem',
+          }}
         >
           <SendIcon />
         </SendButton>
